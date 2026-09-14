@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 检出仓库代码
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -32,7 +32,7 @@ jobs:
       - name: 【Step2】汇总新旧直播源
         run: python3 -u script/step2_merge.py
 
-      - name: 【Step3】汇总直播源初步处理（黑名单过滤+url清洗去重）
+      - name: 【Step3】汇总直播源初步处理
         run: python3 -u script/step3_preprocess.py
 
       - name: 【Step4】直播源测速
@@ -47,7 +47,7 @@ jobs:
       - name: 【Step7】有效源分类运算
         run: python3 -u script/step7_category_classify.py
 
-      - name: 【Step8】有效源分类输出txt/m3u至category目录
+      - name: 【Step8】有效源分类输出
         run: python3 -u script/step8_category_export.py
 
       - name: 输出运行日志
