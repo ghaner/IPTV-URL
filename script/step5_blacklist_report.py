@@ -158,7 +158,7 @@ def main():
             "valid": v,
             "failed": f,
             "failure_rate": round(frate,4),
-            "available_rate": round(1‑frate,4)
+            "available_rate": round(1 - frate, 4)
         })
     report_file = os.path.join(LOG_DIR, "source_quality_report.json")
     with open(report_file, "w", encoding="utf‑8") as f:
