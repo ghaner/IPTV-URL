@@ -8,7 +8,7 @@ SUCCESS_CODES = {200}
 
 
 def parse_m3u(content: str):
-    """m3u/m3u8解析，保持原有逻辑"""
+    """m3u/m3u8解析"""
     result = []
     lines = content.splitlines()
     name = ""
@@ -24,7 +24,7 @@ def parse_m3u(content: str):
 
 
 def parse_txt(content: str):
-    """txt格式解析，保持原有逻辑"""
+    """txt格式解析"""
     result = []
     lines = content.splitlines()
     for line in lines:
@@ -38,8 +38,8 @@ def parse_txt(content: str):
 
 
 async def step1_download():
-    # 读取下载地址配置
-    with open("DOWNLOAD_SOURCE_URLS.json", "r", encoding="utf-8") as f:
+    # ==========修复这里：正确json路径==========
+    with open("config/DOWNLOAD_SOURCE_URLS.json", "r", encoding="utf-8") as f:
         source_urls = json.load(f)
 
     if not isinstance(source_urls, list) or len(source_urls) == 0:
@@ -81,15 +81,15 @@ async def step1_download():
                 print(f"[WARN‑STEP1] 请求异常 {source_url} , error: {str(e)}")
                 continue
 
-    # 写入中间结果文件
+    # 输出文件路径，脚本在script目录，输出到script下
     out_data = {
         "total": len(all_sources),
         "list": all_sources
     }
-    with open("step1_output.json", "w", encoding="utf-8") as fw:
+    with open("script/step1_output.json", "w", encoding="utf-8") as fw:
         json.dump(out_data, fw, ensure_ascii=False, indent=2)
 
-    print(f"[STEP1-INFO] step1完成，共获取 {len(all_sources)} 条直播源，写入 step1_output.json")
+    print(f"[STEP1-INFO] step1完成，共获取 {len(all_sources)} 条直播源，写入 script/step1_output.json")
     return out_data
 
 
