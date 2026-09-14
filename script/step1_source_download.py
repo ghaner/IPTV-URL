@@ -2,13 +2,13 @@ import json
 import asyncio
 from collections import defaultdict
 import aiohttp
+import os
 
 VLC_UA = "VLC/3.0.20 LibVLC/3.0.20"
 SUCCESS_CODES = {200}
 
 
 def parse_m3u(content: str):
-    """m3u/m3u8解析"""
     result = []
     lines = content.splitlines()
     name = ""
@@ -24,7 +24,6 @@ def parse_m3u(content: str):
 
 
 def parse_txt(content: str):
-    """txt格式解析"""
     result = []
     lines = content.splitlines()
     for line in lines:
@@ -38,16 +37,14 @@ def parse_txt(content: str):
 
 
 async def step1_download():
-    # ==========修复这里：正确json路径==========
     with open("config/DOWNLOAD_SOURCE_URLS.json", "r", encoding="utf-8") as f:
         source_urls = json.load(f)
 
     if not isinstance(source_urls, list) or len(source_urls) == 0:
         print("[FATAL-STEP1] DOWNLOAD_SOURCE_URLS.json 下载地址为空，终止下载！")
-        return {}
+        return []
 
-    all_sources = []
-    source_map = defaultdict(list)
+    text_lines = []
     print(f"[STEP1-DEBUG] 待下载源数量：{len(source_urls)}")
     print(f"DEBUG-UA-RAW: {repr(VLC_UA)}")
 
@@ -75,22 +72,22 @@ async def step1_download():
                         result_list = parse_txt(text_content)
 
                     print(f"[STEP1‑DEBUG] {source_url} 解析得到 {len(result_list)} 条源")
-                    all_sources.extend(result_list)
+                    # 转换为原版格式：名称,url #来源链接
+                    for item in result_list:
+                        line = f"{item['name']},{item['url']} #{source_url}"
+                        text_lines.append(line)
 
             except Exception as e:
                 print(f"[WARN‑STEP1] 请求异常 {source_url} , error: {str(e)}")
                 continue
 
-    # 输出文件路径，脚本在script目录，输出到script下
-    out_data = {
-        "total": len(all_sources),
-        "list": all_sources
-    }
-    with open("script/step1_output.json", "w", encoding="utf-8") as fw:
-        json.dump(out_data, fw, ensure_ascii=False, indent=2)
+    # 输出 sources/下载源.txt
+    out_file = os.path.join("sources", "下载源.txt")
+    with open(out_file, "w", encoding="utf-8") as fw:
+        fw.write("\n".join(text_lines))
 
-    print(f"[STEP1-INFO] step1完成，共获取 {len(all_sources)} 条直播源，写入 script/step1_output.json")
-    return out_data
+    print(f"[STEP1-INFO] step1完成，共获取 {len(text_lines)} 条直播源，写入 {out_file}")
+    return text_lines
 
 
 if __name__ == "__main__":
