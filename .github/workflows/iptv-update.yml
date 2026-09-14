@@ -1,0 +1,62 @@
+name: IPTV直播源更新处理
+on:
+  schedule:
+    - cron: '0 16 * * 5'
+  workflow_dispatch:
+
+jobs:
+  iptv-process-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: 设置Python环境
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: 安装系统依赖ffprobe(ffmpeg)
+        run: sudo apt update && sudo apt install -y ffmpeg
+
+      - name: 安装python依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r config/requirements.txt
+
+      - name: 【Step1】下载直播源文件
+        run: python3 -u script/step1_source_download.py
+
+      - name: 【Step2】汇总新旧直播源
+        run: python3 -u script/step2_merge.py
+
+      - name: 【Step3】汇总直播源初步处理（黑名单过滤+url清洗去重）
+        run: python3 -u script/step3_preprocess.py
+
+      - name: 【Step4】直播源测速
+        run: python3 -u script/step4_speedtest.py
+
+      - name: 【Step5】测速结果处理｜更新黑名单、生成源质量报告
+        run: python3 -u script/step5_blacklist_report.py
+
+      - name: 【Step6】有效源标准化处理
+        run: python3 -u script/step6_valid_standard.py
+
+      - name: 【Step7】有效源分类运算
+        run: python3 -u script/step7_category_classify.py
+
+      - name: 【Step8】有效源分类输出txt/m3u至category目录
+        run: python3 -u script/step8_category_export.py
+
+      - name: 输出运行日志
+        run: ls -la
+
+      - name: 提交并推送生成文件回仓库
+        run: |
+          git config --global user.name "github‑actions[bot]"
+          git config --global user.email "github‑actions[bot]@users.noreply.github.com"
+          git add sources/* category/* log/*
+          git diff --quiet && git diff --staged --quiet || git commit -m "🤖Action自动更新iptv源 $(date '+%Y‑%m‑%d %H:%M')"
+          git push
