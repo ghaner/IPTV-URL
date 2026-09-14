@@ -99,7 +99,32 @@ async def download_sources():
     all_sources = []
     source_map = defaultdict(list)
     print(f"[STEP1‑DEBUG] 待下载源数量：{len(source_urls)}")
-    print(f"DEBUG‑UA‑RAW: {repr(VLC_UA)}")
+    # -------- 在你的 async for source_url in source_list: 循环内部，原有get位置完整替换为下面整块 --------
+async with session.get(
+    source_url,
+    headers={
+        # 手敲下面UA，尽量不要复制聊天框文本
+        "User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
+    },
+    timeout=aiohttp.ClientTimeout(total=12)
+) as resp:
+    if resp.status not in SUCCESS_CODES:
+        # 新增：捕获服务器返回的报错正文
+        err_body = await resp.text(errors="ignore")
+        print(f"[WARN‑STEP1] {source_url} status={resp.status}, reply_body={err_body[:400]}")
+        continue
+
+    text_content = await resp.text(errors="ignore")
+    # === 下面保留你原来已有的业务代码，不要改动 ===
+    result_list = []
+    if source_url.endswith(".m3u") or source_url.endswith(".m3u8"):
+        result_list = parse_m3u(text_content)
+    else:
+        result_list = parse_txt(text_content)
+
+    print(f"[STEP1‑DEBUG] {source_url} 解析得到 {len(result_list)} 条源")
+    all_sources.extend(result_list)
+# ---------------------------------------------------------------------------------------
     async with aiohttp.ClientSession() as session:
         for idx, source_url in enumerate(source_urls):
             try:
