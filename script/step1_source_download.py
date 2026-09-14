@@ -99,6 +99,7 @@ async def download_sources():
     all_sources = []
     source_map = defaultdict(list)
     print(f"[STEP1‑DEBUG] 待下载源数量：{len(source_urls)}")
+    print(f"DEBUG‑UA‑RAW: {repr(VLC_UA)}")
     async with aiohttp.ClientSession() as session:
         for idx, source_url in enumerate(source_urls):
             try:
