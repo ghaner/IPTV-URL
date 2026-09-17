@@ -1,39 +1,37 @@
 #EXTM3U
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV2财经",CCTV2财经
-http://38.75.136.137:98/gslb/dsdqbv/cctv2.m3u8?auth=test20251009
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV2财经",CCTV2财经
-http://38.75.136.137:98/gslb/dsdqca/cctv2.m3u8?auth=test20251009
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV2财经",CCTV2财经
-http://38.75.136.137:98/gslb/dsdqca/gzws.m3u8?auth=test20251009
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV2财经",CCTV2财经
-http://pull-hls-f26.douyincdn.com/media/stream-119931326014423724.m3u8?expire=6ab1fb8b&sign=355804b31374f7e0ee3a9910586fbe26&exp_hrchy=w1&major_anchor_level=common&arch_hrchy=w1&t_id=037-202609151152421F3BAEDC9C3AE38ABE8C-SoOgVK
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV2财经",CCTV2财经
-http://112.30.73.119:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV2财经",CCTV2财经
+#EXTINF:-1,tvg-name="CCTV2财经",CCTV2财经
 http://120.76.248.139/live/bfgd/4200000061.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV2财经",CCTV2财经
+#EXTINF:-1,tvg-name="CCTV2财经",CCTV2财经
+http://112.30.73.119:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1,tvg-name="CCTV2财经",CCTV2财经
 http://bztv.tvbus.cc:8081/cdnlive/cctv2.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV2财经",CCTV2财经
-http://f.123.rr.kg/163189/cctv2
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV2财经",CCTV2财经
+#EXTINF:-1,tvg-name="CCTV2财经",CCTV2财经
 http://218.206.193.218:8888/hls/2/index.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV2财经",CCTV2财经
+#EXTINF:-1,tvg-name="CCTV2财经",CCTV2财经
+http://f.123.rr.kg/163189/cctv2
+#EXTINF:-1,tvg-name="CCTV2财经",CCTV2财经
+http://38.75.136.137:98/gslb/dsdqca/gzws.m3u8?auth=test20251009
+#EXTINF:-1,tvg-name="CCTV2财经",CCTV2财经
 http://38.75.136.137:98/gslb/dsdqpub/cctv2.m3u8?auth=testpub
-#EXTINF:-1 tvg‑id="" tvg‑name="上海第一财经",上海第一财经
+#EXTINF:-1,tvg-name="CCTV2财经",CCTV2财经
+http://38.75.136.137:98/gslb/dsdqca/cctv2.m3u8?auth=test20251009
+#EXTINF:-1,tvg-name="CCTV2财经",CCTV2财经
+http://38.75.136.137:98/gslb/dsdqbv/cctv2.m3u8?auth=test20251009
+#EXTINF:-1,tvg-name="CCTV2财经",CCTV2财经
+http://pull-hls-f26.douyincdn.com/media/stream-119931326014423724.m3u8?expire=6ab1fb8b&sign=355804b31374f7e0ee3a9910586fbe26&exp_hrchy=w1&major_anchor_level=common&arch_hrchy=w1&t_id=037-202609151152421F3BAEDC9C3AE38ABE8C-SoOgVK
+#EXTINF:-1,tvg-name="上海第一财经",上海第一财经
 https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="东方财经",东方财经
+#EXTINF:-1,tvg-name="东方财经",东方财经
 http://8.138.7.223/tv/5gtv.php?id=227
-#EXTINF:-1 tvg‑id="" tvg‑name="北京财经",北京财经
-http://m.061899.xyz/mg/bjcj
-#EXTINF:-1 tvg‑id="" tvg‑name="北京财经",北京财经
+#EXTINF:-1,tvg-name="北京财经",北京财经
 http://8.138.7.223/tv/bj.php?id=0005
-#EXTINF:-1 tvg‑id="" tvg‑name="深圳财经生活",深圳财经生活
+#EXTINF:-1,tvg-name="深圳财经生活",深圳财经生活
 http://nn.7x9d.cn/%E6%B7%B1%E5%9C%B3%E6%9C%80%E6%96%B0.php?id=szcjsh
-#EXTINF:-1 tvg‑id="" tvg‑name="点掌财经",点掌财经
+#EXTINF:-1,tvg-name="点掌财经",点掌财经
 https://volcanopull.aniu.tv/live/aniu2/index.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="第一财经",第一财经
-http://8.138.7.223/tv/5gtv.php?id=17
-#EXTINF:-1 tvg‑id="" tvg‑name="第一财经",第一财经
+#EXTINF:-1,tvg-name="第一财经",第一财经
 http://ls.qingting.fm/live/276.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="第一财经",第一财经
+#EXTINF:-1,tvg-name="第一财经",第一财经
+http://8.138.7.223/tv/5gtv.php?id=17
+#EXTINF:-1,tvg-name="第一财经",第一财经
 http://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
