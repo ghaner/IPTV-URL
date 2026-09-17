@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1,tvg-name="晋城公共",晋城公共
+#EXTINF:-1,group-title="晋城",晋城公共
 http://live.jinnews.com.cn/ggpd/playlist.m3u8
-#EXTINF:-1,tvg-name="晋城新闻",晋城新闻
+#EXTINF:-1,group-title="晋城",晋城新闻
 http://live.jinnews.com.cn/xwzh/playlist.m3u8
