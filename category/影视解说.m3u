@@ -13,10 +13,12 @@ https://live.ottiptv.cc/douyu/9348282
 https://live.ottiptv.cc/douyu/8778280
 #EXTINF:-1 tvg‑id="" tvg‑name="享看电影",享看电影
 https://live.ottiptv.cc/douyu/8974130
-#EXTINF:-1 tvg‑id="" tvg‑name="亮哥讲电影2",亮哥讲电影2
-https://live.ottiptv.cc/huya/21059622
+#EXTINF:-1 tvg‑id="" tvg‑name="亮哥讲电影",亮哥讲电影
+https://live.ottiptv.cc/huya/16144175
 #EXTINF:-1 tvg‑id="" tvg‑name="亮哥讲电影2",亮哥讲电影2
 https://live.ottiptv.cc/huya/29982687
+#EXTINF:-1 tvg‑id="" tvg‑name="亮哥讲电影2",亮哥讲电影2
+https://live.ottiptv.cc/huya/21059622
 #EXTINF:-1 tvg‑id="" tvg‑name="伯乐说电影V",伯乐说电影V
 https://live.ottiptv.cc/douyu/9386057
 #EXTINF:-1 tvg‑id="" tvg‑name="俗哥看电影",俗哥看电影
@@ -25,8 +27,6 @@ https://live.ottiptv.cc/douyu/2161818
 https://live.ottiptv.cc/douyu/8317926
 #EXTINF:-1 tvg‑id="" tvg‑name="博然讲电影",博然讲电影
 https://live.ottiptv.cc/douyu/9561992
-#EXTINF:-1 tvg‑id="" tvg‑name="周墨看电影",周墨看电影
-https://live.ottiptv.cc/douyu/9505584
 #EXTINF:-1 tvg‑id="" tvg‑name="唐司令说电影",唐司令说电影
 https://live.ottiptv.cc/douyu/8774345
 #EXTINF:-1 tvg‑id="" tvg‑name="喵妹说电影",喵妹说电影
@@ -35,6 +35,10 @@ https://live.ottiptv.cc/douyu/9312432
 https://live.ottiptv.cc/douyu/9395966
 #EXTINF:-1 tvg‑id="" tvg‑name="宇哥讲电影",宇哥讲电影
 https://live.ottiptv.cc/douyu/2104744
+#EXTINF:-1 tvg‑id="" tvg‑name="安小闫说电影x",安小闫说电影x
+https://live.ottiptv.cc/douyu/1842621
+#EXTINF:-1 tvg‑id="" tvg‑name="小丑讲电影",小丑讲电影
+https://live.ottiptv.cc/huya/16857432
 #EXTINF:-1 tvg‑id="" tvg‑name="小丽说电影",小丽说电影
 https://live.ottiptv.cc/douyu/9368016
 #EXTINF:-1 tvg‑id="" tvg‑name="小乔讲电影",小乔讲电影
@@ -91,6 +95,8 @@ https://live.ottiptv.cc/douyu/10535867
 https://live.ottiptv.cc/douyu/2039501
 #EXTINF:-1 tvg‑id="" tvg‑name="火龙果说电影",火龙果说电影
 https://live.ottiptv.cc/douyu/9559158
+#EXTINF:-1 tvg‑id="" tvg‑name="熊妹撩电影",熊妹撩电影
+https://live.ottiptv.cc/huya/15966357
 #EXTINF:-1 tvg‑id="" tvg‑name="牛叔说电影",牛叔说电影
 https://live.ottiptv.cc/douyu/2758565
 #EXTINF:-1 tvg‑id="" tvg‑name="牛叔说电影二台",牛叔说电影二台
@@ -123,6 +129,8 @@ https://live.ottiptv.cc/douyu/7532080
 https://live.ottiptv.cc/douyu/9444627
 #EXTINF:-1 tvg‑id="" tvg‑name="谁语说电影",谁语说电影
 https://live.ottiptv.cc/douyu/8705754
+#EXTINF:-1 tvg‑id="" tvg‑name="越哥说电影",越哥说电影
+https://live.ottiptv.cc/huya/15894162
 #EXTINF:-1 tvg‑id="" tvg‑name="越哥说电影2",越哥说电影2
 https://live.ottiptv.cc/huya/29982680
 #EXTINF:-1 tvg‑id="" tvg‑name="辰哥说电影",辰哥说电影
