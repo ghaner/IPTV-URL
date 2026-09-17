@@ -1,9 +1,13 @@
 #EXTM3U
 #EXTINF:-1 tvg‑id="" tvg‑name="河源公共",河源公共
-http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="河源公共",河源公共
 https://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
+#EXTINF:-1 tvg‑id="" tvg‑name="河源公共",河源公共
+http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8?zguangd=
+#EXTINF:-1 tvg‑id="" tvg‑name="河源公共",河源公共
+http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
 #EXTINF:-1 tvg‑id="" tvg‑name="河源综合",河源综合
 http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
 #EXTINF:-1 tvg‑id="" tvg‑name="河源综合",河源综合
 https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
+#EXTINF:-1 tvg‑id="" tvg‑name="河源综艺",河源综艺
+http://tmpstream.hyrtv.cn/xwzh/playlist.m3u8?_upt=407e01941606112151%3Fzguangd
