@@ -1,127 +1,127 @@
 #EXTM3U
-#EXTINF:-1 tvg‑id="" tvg‑name="2020国外热门动感DJ版",2020国外热门动感DJ版
+#EXTINF:-1,tvg-name="2020国外热门动感DJ版",2020国外热门动感DJ版
 https://vd3.bdstatic.com/mda-kb2bqk7bw0ntjpfn/sc/mda-kb2bqk7bw0ntjpfn.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="2021年最火伤感音乐",2021年最火伤感音乐
+#EXTINF:-1,tvg-name="2021年最火伤感音乐",2021年最火伤感音乐
 https://vdse.bdstatic.com//6d39df48360bdb12f73800397c4a6c02.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="2021热门伤感DJ",2021热门伤感DJ
+#EXTINF:-1,tvg-name="2021热门伤感DJ",2021热门伤感DJ
 https://vdse.bdstatic.com//06b4e9b185b843e694e4d20e9b0a0aac.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="2021爆红《6首女生版伤感DJ》",2021爆红《6首女生版伤感DJ》
+#EXTINF:-1,tvg-name="2021爆红《6首女生版伤感DJ》",2021爆红《6首女生版伤感DJ》
 https://vdse.bdstatic.com//2e77709380ad7e6163e80c4d5c179689.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="5首伤感DJ",5首伤感DJ
+#EXTINF:-1,tvg-name="5首伤感DJ",5首伤感DJ
 https://vd2.bdstatic.com/mda-nd5cr584424xr57c/sc/cae_h264_delogo/1649238205192327499/mda-nd5cr584424xr57c.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="5首劲爆dj",5首劲爆dj
+#EXTINF:-1,tvg-name="5首劲爆dj",5首劲爆dj
 https://vd2.bdstatic.com/mda-mm69dxgtcqg28j9j/sc/cae_h264/1638860024910192032/mda-mm69dxgtcqg28j9j.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="7DJ舞曲",7DJ舞曲
+#EXTINF:-1,tvg-name="7DJ舞曲",7DJ舞曲
 https://vd2.bdstatic.com/mda-nch73gktvfmgdrbd/sc/cae_h264_delogo/1647644537085447432/mda-nch73gktvfmgdrbd.mp4?v_from_s=hkapp-haokan-nanjing&auth_key=1648813542-0-0-4a2d27d50015d19f3ed5cf5fbc261f79&bcevod_channel=searchbox_feed&pd=1&vt=1&cd=0&watermark=0&did=ced9e69a4f6154e91be590c1d5a488ab&logid=0942439256&vid=4192073541598205553&pt=0&appver=7.2.1.10&model=T7-5G10&osver=9&cr=2&abtest=peav_g52&sle=1&sl=1420&split=1235330&dt=1&nt=0&pe=0&prerender=0&kpdl=1&h265_m=-1&klogid=c770aa16cadb579d&kapid=1&psp=1&psk=1028&pif=0_0_0_0&qtfc=65535&qtut=0&stg=none
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV15音乐",CCTV15音乐
-http://112.30.73.119:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV15音乐",CCTV15音乐
-http://218.206.193.218:8888/hls/15/index.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV15音乐",CCTV15音乐
-http://107.150.60.122/live/cctv15.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV15音乐",CCTV15音乐
-http://38.75.136.137:98/gslb/dsdqca/jxws.m3u8?auth=test20251009
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV15音乐",CCTV15音乐
-http://38.75.136.137:98/gslb/dsdqca/cctv15.m3u8?auth=test20251009
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV15音乐",CCTV15音乐
-http://bztv.tvbus.cc:8081/cdnlive/cctv15.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV15音乐",CCTV15音乐
-http://192.151.150.154/live/cctv15.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV15音乐",CCTV15音乐
-http://38.75.136.137:98/gslb/dsdqca/chcymdy.m3u8?auth=test20251009
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV15音乐",CCTV15音乐
-http://38.75.136.137:98/gslb/dsdqpub/cctv15.m3u8?auth=testpub
-#EXTINF:-1 tvg‑id="" tvg‑name="CCTV15音乐",CCTV15音乐
+#EXTINF:-1,tvg-name="CCTV15音乐",CCTV15音乐
 http://120.76.248.139/live/bfgd/4200000133.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ4首吸烟的女人",DJ4首吸烟的女人
+#EXTINF:-1,tvg-name="CCTV15音乐",CCTV15音乐
+http://38.75.136.137:98/gslb/dsdqca/cctv15.m3u8?auth=test20251009
+#EXTINF:-1,tvg-name="CCTV15音乐",CCTV15音乐
+http://192.151.150.154/live/cctv15.m3u8
+#EXTINF:-1,tvg-name="CCTV15音乐",CCTV15音乐
+http://112.30.73.119:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1,tvg-name="CCTV15音乐",CCTV15音乐
+http://38.75.136.137:98/gslb/dsdqca/chcymdy.m3u8?auth=test20251009
+#EXTINF:-1,tvg-name="CCTV15音乐",CCTV15音乐
+http://38.75.136.137:98/gslb/dsdqpub/cctv15.m3u8?auth=testpub
+#EXTINF:-1,tvg-name="CCTV15音乐",CCTV15音乐
+http://bztv.tvbus.cc:8081/cdnlive/cctv15.m3u8
+#EXTINF:-1,tvg-name="CCTV15音乐",CCTV15音乐
+http://38.75.136.137:98/gslb/dsdqca/jxws.m3u8?auth=test20251009
+#EXTINF:-1,tvg-name="CCTV15音乐",CCTV15音乐
+http://218.206.193.218:8888/hls/15/index.m3u8
+#EXTINF:-1,tvg-name="CCTV15音乐",CCTV15音乐
+http://107.150.60.122/live/cctv15.m3u8
+#EXTINF:-1,tvg-name="DJ4首吸烟的女人",DJ4首吸烟的女人
 https://vd2.bdstatic.com/mda-mg7zcjiauy83ehmz/sc/cae_h264/1625790109974824055/mda-mg7zcjiauy83ehmz.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ《小薇》",DJ《小薇》
+#EXTINF:-1,tvg-name="DJ《小薇》",DJ《小薇》
 https://vd3.bdstatic.com/mda-nd6jimimnfwyjuar/sc/cae_h264_delogo/1649345922829980302/mda-nd6jimimnfwyjuar.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ《情火》《拥抱你离去》《夜夜夜漫长》",DJ《情火》《拥抱你离去》《夜夜夜漫长》
+#EXTINF:-1,tvg-name="DJ《情火》《拥抱你离去》《夜夜夜漫长》",DJ《情火》《拥抱你离去》《夜夜夜漫长》
 https://vd3.bdstatic.com/mda-nd3gy7ukv0reh4xv/sc/cae_h264_delogo/1649115109025912038/mda-nd3gy7ukv0reh4xv.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ《等爱》",DJ《等爱》
+#EXTINF:-1,tvg-name="DJ《等爱》",DJ《等爱》
 https://vd2.bdstatic.com/mda-mfhh1e0hwq212rrt/sc/h264/1623988905898256147/mda-mfhh1e0hwq212rrt.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ《舍不得又能怎样呢》",DJ《舍不得又能怎样呢》
+#EXTINF:-1,tvg-name="DJ《舍不得又能怎样呢》",DJ《舍不得又能怎样呢》
 https://vd2.bdstatic.com/mda-ncv1qd3acxskd46p/sc/cae_h264_delogo/1648720820032252958/mda-ncv1qd3acxskd46p.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ《酒醉风雨情》《伤心苦酒》《朋友的酒》《红尘没有错》",DJ《酒醉风雨情》《伤心苦酒》《朋友的酒》《红尘没有错》
+#EXTINF:-1,tvg-name="DJ《酒醉风雨情》《伤心苦酒》《朋友的酒》《红尘没有错》",DJ《酒醉风雨情》《伤心苦酒》《朋友的酒》《红尘没有错》
 https://vd4.bdstatic.com/mda-nd1a4zuxf78py830/sc/cae_h264_delogo/1649003829932795060/mda-nd1a4zuxf78py830.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ《醉过多少回》",DJ《醉过多少回》
+#EXTINF:-1,tvg-name="DJ《醉过多少回》",DJ《醉过多少回》
 https://vd4.bdstatic.com/mda-megp46e98a4f2b9g/sc/h264/1621239560364992817/mda-megp46e98a4f2b9g.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ天后",DJ天后
+#EXTINF:-1,tvg-name="DJ天后",DJ天后
 https://vd3.bdstatic.com/mda-kk5f22n13qna8edp/v1-cae/sc/mda-kk5f22n13qna8edp.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ情歌",DJ情歌
+#EXTINF:-1,tvg-name="DJ情歌",DJ情歌
 https://vdse.bdstatic.com//4d7e8fe409b2ba9e08b179de8e146fa3.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ情歌5首",DJ情歌5首
+#EXTINF:-1,tvg-name="DJ情歌5首",DJ情歌5首
 https://vd3.bdstatic.com/mda-mmg7iqkrutbwd7az/sc/cae_h264/1639851941696222972/mda-mmg7iqkrutbwd7az.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ情歌8首",DJ情歌8首
+#EXTINF:-1,tvg-name="DJ情歌8首",DJ情歌8首
 https://vd2.bdstatic.com/mda-mk7hhug7aprk2806/sc/cae_h264/1636496746808750167/mda-mk7hhug7aprk2806.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ情歌《爱情迷了路》",DJ情歌《爱情迷了路》
+#EXTINF:-1,tvg-name="DJ情歌《爱情迷了路》",DJ情歌《爱情迷了路》
 https://vd4.bdstatic.com/mda-mdbrb7fns70avrmt//cae_h264/1618222287/mda-mdbrb7fns70avrmt.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ无情书",DJ无情书
+#EXTINF:-1,tvg-name="DJ无情书",DJ无情书
 https://vd3.bdstatic.com/mda-kkikg9rzshuhcxwy/v1-cae/sc/mda-kkikg9rzshuhcxwy.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ歌曲《怎么爱都爱不够》",DJ歌曲《怎么爱都爱不够》
+#EXTINF:-1,tvg-name="DJ歌曲《怎么爱都爱不够》",DJ歌曲《怎么爱都爱不够》
 https://vd3.bdstatic.com/mda-mksyipb0103ck0pm/sc/cae_h264_nowatermark/1638055298562460672/mda-mksyipb0103ck0pm.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ此生已过半",DJ此生已过半
+#EXTINF:-1,tvg-name="DJ此生已过半",DJ此生已过半
 https://vd3.bdstatic.com/mda-mdaprhx095djift2//mda-mdaprhx095djift2.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ爱难求",DJ爱难求
+#EXTINF:-1,tvg-name="DJ爱难求",DJ爱难求
 https://vd4.bdstatic.com/mda-mk99haw9m5kp6p5s/default/h264/1636526565199080954/mda-mk99haw9m5kp6p5s.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ老歌60-70-80爱听",DJ老歌60-70-80爱听
+#EXTINF:-1,tvg-name="DJ老歌60-70-80爱听",DJ老歌60-70-80爱听
 https://vd2.bdstatic.com/mda-nd59vsq0r1e2j3g2/sc/cae_h264_delogo/1649230737582909591/mda-nd59vsq0r1e2j3g2.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ舞曲",DJ舞曲
+#EXTINF:-1,tvg-name="DJ舞曲",DJ舞曲
 https://vdse.bdstatic.com//8258cbe0dfd6738613fe9efd33a7a83f.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ舞曲",DJ舞曲
-https://vd2.bdstatic.com/mda-mmqfbgzdj99h2g2a/sc/cae_h264_nowatermark/1640431486180468034/mda-mmqfbgzdj99h2g2a.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ舞曲",DJ舞曲
-https://vdse.bdstatic.com//1fc9fd16e02ca272bb81666b85bf4135.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ舞曲",DJ舞曲
+#EXTINF:-1,tvg-name="DJ舞曲",DJ舞曲
 https://vd2.bdstatic.com/mda-nch73gktvfmgdrbd/sc/cae_h264_delogo/1647644537085447432/mda-nch73gktvfmgdrbd.mp4?v_from_s=hkapp-haokan-nanjing&auth_key=1648813542-0-0-4a2d27d50015d19f3ed5cf5fbc261f79&bcevod_channel=searchbox_feed&pd=1&vt=1&cd=0&watermark=0&did=ced9e69a4f6154e91be590c1d5a488ab&logid=0942439256&vid=4192073541598205553&pt=0&appver=7.2.1.10&model=T7-5G10&osver=9&cr=2&abtest=peav_g52&sle=1&sl=1420&split=1235330&dt=1&nt=0&pe=0&prerender=0&kpdl=1&h265_m=-1&klogid=c770aa16cadb579d&kapid=1&psp=1&psk=68&pif=0_0_0_0&qtfc=65535&qtut=0&stg=none
-#EXTINF:-1 tvg‑id="" tvg‑name="DJ舞曲",DJ舞曲
+#EXTINF:-1,tvg-name="DJ舞曲",DJ舞曲
 https://vd4.bdstatic.com/mda-idpg23napy9gsnxb/logo/sc/mda-idpg23napy9gsnxb.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="UP主DJC",UP主DJC
+#EXTINF:-1,tvg-name="DJ舞曲",DJ舞曲
+https://vdse.bdstatic.com//1fc9fd16e02ca272bb81666b85bf4135.mp4
+#EXTINF:-1,tvg-name="DJ舞曲",DJ舞曲
+https://vd2.bdstatic.com/mda-mmqfbgzdj99h2g2a/sc/cae_h264_nowatermark/1640431486180468034/mda-mmqfbgzdj99h2g2a.mp4
+#EXTINF:-1,tvg-name="UP主DJC",UP主DJC
 https://live.ottiptv.cc/douyu/9429545
-#EXTINF:-1 tvg‑id="" tvg‑name="dj舞曲女人版",dj舞曲女人版
+#EXTINF:-1,tvg-name="dj舞曲女人版",dj舞曲女人版
 https://vd3.bdstatic.com/mda-mkp88kxv6r8y73k9/sc/cae_h264/1637733263867775329/mda-mkp88kxv6r8y73k9.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="dj舞曲英雄泪",dj舞曲英雄泪
+#EXTINF:-1,tvg-name="dj舞曲英雄泪",dj舞曲英雄泪
 https://vd3.bdstatic.com/mda-mkt45tnypacz3smk/sc/cae_h264/1638069225501294830/mda-mkt45tnypacz3smk.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="《潇洒的走DJ》动感节奏",《潇洒的走DJ》动感节奏
+#EXTINF:-1,tvg-name="《潇洒的走DJ》动感节奏",《潇洒的走DJ》动感节奏
 https://vd4.bdstatic.com/mda-kgirfiwxg342z9d8/v1-cae/sc/mda-kgirfiwxg342z9d8.mp4
-#EXTINF:-1 tvg‑id="" tvg‑name="放松轻音乐",放松轻音乐
+#EXTINF:-1,tvg-name="放松轻音乐",放松轻音乐
 https://live.ottiptv.cc/huya/21241813
-#EXTINF:-1 tvg‑id="" tvg‑name="潮流音乐",潮流音乐
+#EXTINF:-1,tvg-name="潮流音乐",潮流音乐
 http://play-radio-stream3.hndt.com/now/Or5au0KN/playlist.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="热星音乐菌",热星音乐菌
+#EXTINF:-1,tvg-name="热星音乐菌",热星音乐菌
 https://live.ottiptv.cc/douyu/8405922
-#EXTINF:-1 tvg‑id="" tvg‑name="胡蜜丹DJ版《花蝴蝶飞》人美歌甜，节奏欢快，好听！",胡蜜丹DJ版《花蝴蝶飞》人美歌甜，节奏欢快，好听！
+#EXTINF:-1,tvg-name="胡蜜丹DJ版《花蝴蝶飞》人美歌甜，节奏欢快，好听！",胡蜜丹DJ版《花蝴蝶飞》人美歌甜，节奏欢快，好听！
 https://vd2.bdstatic.com/mda-mk3bz0w5pft9k5bj/sc/cae_h264/1681186263904400896/mda-mk3bz0w5pft9k5bj.mp4?v_from_s=hkapp-haokan-nanjing&auth_key=1702486885-0-0-74a843dd146507abc7d28ede818e2f15&bcevod_channel=searchbox_feed&cr=2&cd=0&pd=1&pt=3&logid=0085549466&vid=11308736946862743676&klogid=0085549466&abtest=114675_1
-#EXTINF:-1 tvg‑id="" tvg‑name="虎牙音乐",虎牙音乐
+#EXTINF:-1,tvg-name="虎牙音乐",虎牙音乐
 https://live.ottiptv.cc/huya/880207
-#EXTINF:-1 tvg‑id="" tvg‑name="音乐之声",音乐之声
+#EXTINF:-1,tvg-name="音乐之声",音乐之声
 http://satellitepull.cnr.cn/live/wxyyzs/playlist.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="音乐台长",音乐台长
+#EXTINF:-1,tvg-name="音乐台长",音乐台长
 https://live.ottiptv.cc/douyu/9629943
-#EXTINF:-1 tvg‑id="" tvg‑name="音乐小石榴",音乐小石榴
+#EXTINF:-1,tvg-name="音乐小石榴",音乐小石榴
 https://live.ottiptv.cc/huya/17091681
-#EXTINF:-1 tvg‑id="" tvg‑name="音乐才女与霸道总裁的治愈之恋",音乐才女与霸道总裁的治愈之恋
+#EXTINF:-1,tvg-name="音乐才女与霸道总裁的治愈之恋",音乐才女与霸道总裁的治愈之恋
 https://live.ottiptv.cc/yy/1382735573
-#EXTINF:-1 tvg‑id="" tvg‑name="音乐欣赏",音乐欣赏
+#EXTINF:-1,tvg-name="音乐欣赏",音乐欣赏
 http://61.221.215.25:8800/hls/49/index.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="音乐现场",音乐现场
-http://satellitepull.cnr.cn/live/wx32nmgyygb/playlist.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="音乐现场",音乐现场
+#EXTINF:-1,tvg-name="音乐现场",音乐现场
 https://satellitepull.cnr.cn/live/wx32nmgyygb/playlist.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="颜值DJ",颜值DJ
+#EXTINF:-1,tvg-name="音乐现场",音乐现场
+http://satellitepull.cnr.cn/live/wx32nmgyygb/playlist.m3u8
+#EXTINF:-1,tvg-name="颜值DJ",颜值DJ
 https://live.ottiptv.cc/huya/21241770
-#EXTINF:-1 tvg‑id="" tvg‑name="风云音乐",风云音乐
-http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
-#EXTINF:-1 tvg‑id="" tvg‑name="风云音乐",风云音乐
-https://live.264788.xyz/channel/fengyunyinyue?streamid=be37d16b874e7ba11dd383d7ecd75752&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-#EXTINF:-1 tvg‑id="" tvg‑name="风云音乐",风云音乐
-http://207.56.13.146:81/cdnlive/fyyy.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="风云音乐",风云音乐
+#EXTINF:-1,tvg-name="风云音乐",风云音乐
 http://183.11.239.36:808/hls/99/index.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="风云音乐",风云音乐
-https://live.264788.xyz/channel/fengyunyinyue?streamid=1b41fb9153cba3ee19bd5d1b323da27e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-#EXTINF:-1 tvg‑id="" tvg‑name="风云音乐",风云音乐
+#EXTINF:-1,tvg-name="风云音乐",风云音乐
 http://dassby.qqff.top:99/live/%E9%A3%8E%E4%BA%91%E9%9F%B3%E4%B9%90/index.m3u8
-#EXTINF:-1 tvg‑id="" tvg‑name="风云音乐",风云音乐
+#EXTINF:-1,tvg-name="风云音乐",风云音乐
+http://207.56.13.146:81/cdnlive/fyyy.m3u8
+#EXTINF:-1,tvg-name="风云音乐",风云音乐
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyyy
+#EXTINF:-1,tvg-name="风云音乐",风云音乐
+https://live.264788.xyz/channel/fengyunyinyue?streamid=be37d16b874e7ba11dd383d7ecd75752&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+#EXTINF:-1,tvg-name="风云音乐",风云音乐
+https://live.264788.xyz/channel/fengyunyinyue?streamid=1b41fb9153cba3ee19bd5d1b323da27e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+#EXTINF:-1,tvg-name="风云音乐",风云音乐
+http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub

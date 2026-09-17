@@ -1,3 +1,3 @@
-http://qjrhc.jydjd.top:2911/udp/224.1.100.146:11111
-http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8
-@http://live.dxhmt.cn:9081/tv/11681-1.m3u8
+.m3u8
+http://23.237.228.134/live5/CCTV2.m3u8
+http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed
