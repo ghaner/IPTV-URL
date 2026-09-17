@@ -15,11 +15,14 @@ MAX_TEMP_BLACKLIST_ENTRY = 4
 PERM_BLACKLIST_PATH = os.path.join(SOURCES_DIR, "永久黑名单.txt")
 TEMP_BLACKLIST_PATH = os.path.join(SOURCES_DIR, "临时黑名单.txt")
 
+
 def clean_text(s):
     return s.strip() if s else ""
 
+
 def get_run_trigger_type() -> str:
     return os.environ.get("GITHUB_EVENT_NAME", "")
+
 
 def load_json(path):
     if not os.path.exists(path):
@@ -35,6 +38,7 @@ def load_json(path):
     except Exception:
         return [] if "DOWNLOAD_SOURCE_URLS" in path else dict()
 
+
 def load_perm_blacklist() -> set:
     data = set()
     if os.path.exists(PERM_BLACKLIST_PATH):
@@ -45,10 +49,12 @@ def load_perm_blacklist() -> set:
                     data.add(u)
     return data
 
+
 def save_perm_blacklist(black_set: set):
     with open(PERM_BLACKLIST_PATH, "w", encoding="utf‑8") as f:
         for u in sorted(black_set):
             f.write(u + "\n")
+
 
 def load_temp_blacklist():
     result = {}
@@ -60,7 +66,7 @@ def load_temp_blacklist():
             if not line:
                 continue
             parts = line.split("|")
-            if len(parts) !=3:
+            if len(parts) != 3:
                 continue
             url, iso_str, cnt_str = parts
             try:
@@ -71,6 +77,7 @@ def load_temp_blacklist():
                 continue
     return result
 
+
 def save_temp_blacklist(bl_dict):
     lines = []
     for url, info in bl_dict.items():
@@ -80,6 +87,7 @@ def save_temp_blacklist(bl_dict):
     with open(TEMP_BLACKLIST_PATH, "w", encoding="utf‑8") as f:
         for l in lines:
             f.write(l + "\n")
+
 
 def main():
     print("[STEP5‑PROGRESS] ======步骤5测速结果&黑名单&质量报告开始======")
@@ -94,6 +102,7 @@ def main():
     fail_tmp = os.path.join(SOURCES_DIR, ".fail.tmp")
     valid_out = os.path.join(SOURCES_DIR, "有效直播源.txt")
     fail_out = os.path.join(SOURCES_DIR, "测速失败.txt")
+
     if os.path.exists(valid_tmp):
         os.replace(valid_tmp, valid_out)
     if os.path.exists(fail_tmp):
@@ -107,11 +116,12 @@ def main():
     trigger = get_run_trigger_type()
     perm_bl = load_perm_blacklist()
     temp_bl = load_temp_blacklist()
-    url_consec_fail = {u:0 for u in released_urls}
+
+    url_consec_fail = {u: 0 for u in released_urls}
     for item in results:
         url = item["url"]
         if url not in url_consec_fail:
-            url_consec_fail[url] =0
+            url_consec_fail[url] = 0
         if item["valid"]:
             url_consec_fail[url] = 0
         else:
@@ -125,7 +135,8 @@ def main():
                 new_temp_add.add(url)
         for u in new_temp_add:
             old_count = temp_bl[u]["count"] if u in temp_bl else 0
-            temp_bl[u] = {"enter_time": datetime.now(), "count": old_count+1}
+            temp_bl[u] = {"enter_time": datetime.now(), "count": old_count + 1}
+
         move_perm = set()
         for u in list(temp_bl.keys()):
             if temp_bl[u]["count"] >= MAX_TEMP_BLACKLIST_ENTRY:
@@ -139,36 +150,57 @@ def main():
     else:
         print("[BLACKLIST‑INFO]手动触发，不更新黑名单")
 
+    # =========【修复开始：借鉴iptv_process成熟统计逻辑，修复TOP3为空bug】 =========
     total_stat = defaultdict(int)
     valid_stat = defaultdict(int)
+    # 第一步：遍历测速结果，统计每个source的总数、有效数
     for r in results:
         src = r["source"]
+        src = clean_text(src)
+        if not src:
+            continue
         total_stat[src] += 1
         if r["valid"]:
             valid_stat[src] += 1
+
+    # 收集全部出现过的源：合并source_map的key + 测速结果统计出来的source key，防止tmp文件丢失导致源缺失
+    all_source_keys = set(source_map.keys())
+    all_source_keys.update(total_stat.keys())
+
     report = []
-    for src_url, items in source_map.items():
-        t = total_stat.get(src_url,0)
-        v = valid_stat.get(src_url,0)
+    for src_url in all_source_keys:
+        t = total_stat.get(src_url, 0)
+        v = valid_stat.get(src_url, 0)
         f = t - v
-        frate = f/t if t>0 else 0
+        frate = f / t if t > 0 else 0
         report.append({
             "source_url": src_url,
             "total": t,
             "valid": v,
             "failed": f,
-            "failure_rate": round(frate,4),
+            "failure_rate": round(frate, 4),
             "available_rate": round(1 - frate, 4)
         })
+
+    # 只把有测速样本(total>0)的条目参与排序；没有样本的源排除，避免0失效率占位
+    valid_report_items = [x for x in report if x["total"] > 0]
+    bad_top3 = sorted(valid_report_items, key=lambda x: x["failure_rate"], reverse=True)[:3]
+    bad_url_list = [x["source_url"] for x in bad_top3]
+    # =========【修复结束】 =========
+
     report_file = os.path.join(LOG_DIR, "source_quality_report.json")
     with open(report_file, "w", encoding="utf‑8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
-    bad_top3 = sorted(report, key=lambda x:x["failure_rate"], reverse=True)[:3]
-    bad_url_list = [x["source_url"] for x in bad_top3]
+
     bad_out = os.path.join(SOURCES_DIR, "失效源地址.txt")
     with open(bad_out, "w", encoding="utf‑8") as f:
         f.write("\n".join(bad_url_list))
-    print(f"[STEP5‑END]源质量报告输出log/source_quality_report.json；失效率TOP3:{bad_url_list}")
+
+    if len(bad_url_list) == 0:
+        print(f"[STEP5‑WARN]没有可统计的源样本，失效率TOP3为空")
+    else:
+        print(f"[STEP5‑END]源质量报告输出log/source_quality_report.json；失效率TOP3:{bad_url_list}")
+
 
 if __name__ == "__main__":
     main()
