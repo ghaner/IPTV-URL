@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Step4：读取初处理.txt执行测速【最终修复版】
+"""Step4：读取初处理.txt执行测速【修复stimeout废弃参数】
 修复清单：
-1. HTTP头User‑Agent中文全角横杠 → 英文User‑Agent
-2. ffprobe http ua参数使用 -http_user_agent（之前参数写错导致UA不生效，大量no_video_stream）
+1. ffprobe删除废弃 -stimeout，改用 -rw_timeout
+2. -http_user_agent 正确http UA
 3. 删除预读取2048字节，仅校验http状态码
-4. ffprobe捕获stderr输出，原始错误存入err字段
 """
 import asyncio
 import aiohttp
@@ -46,8 +45,7 @@ async def ffprobe_check(url: str, sem: asyncio.Semaphore) -> Tuple[bool, str, st
             proc = await asyncio.create_subprocess_exec(
                 "ffprobe",
                 "-http_user_agent", BROWSER_UA,
-                "-timeout", "3000000",
-                "-stimeout", "3000000",
+                "-rw_timeout", "3000000",
                 "-v", "error",
                 "-select_streams", "v:0",
                 "-show_entries", "stream=width,height,codec_name,bit_rate",
@@ -186,9 +184,6 @@ async def main():
                 if completed % 50 == 0:
                     v_cnt = sum(1 for r in results if r["valid"])
                     print(f"[STEP4‑PROGRESS]已测速 {completed}/{len(lines)}，有效{v_cnt}，失败{len(results)-v_cnt} sample_err={err}")
-
-                # 调试排查取消下面注释，注意缩进
-                # print(f"[STEP4‑DETAIL] line={orig_line[:80]} err={err}")
 
         finally:
             fv.close()
