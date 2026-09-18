@@ -1,10 +1,6 @@
-# -*- coding: utf‑8 -*-
-"""Step4：读取初处理.txt执行测速【修复版】
-修复点：
-1. HTTP使用浏览器UA，增加Referer头；
-2. ffprobe增加user‑agent参数，解决源拦截默认ffprobe‑UA造成no_video_stream；
-3. 默认下调并发，增大超时，规避服务器主动断开连接；
-4. 保留原有异常细分、域名限流、最大运行时长保护
+# -*- coding: utf-8 -*-
+"""Step4：读取初处理.txt执行测速【修复全部valid=0版本】
+BUG修复：HTTP头key "User‑Agent"中文全角破折号 → 英文 User-Agent
 """
 import asyncio
 import aiohttp
@@ -17,13 +13,12 @@ from urllib.parse import urlparse
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SOURCES_DIR = os.path.join(BASE_DIR, "sources")
 
-# 修改为浏览器UA
 BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 
-# ========== 参数调优：针对iptv源调低并发、增大超时 ==========
+# 参数
 CONCURRENCY_HTTP = 3
 CONCURRENCY_FFPROBE = 2
-TIMEOUT = 12  # HTTP总超时提升到12秒
+TIMEOUT = 12
 SUCCESS_CODES = {200, 201, 202, 206}
 MAX_SPEED_TEST_RUN_TIME = 5 * 3600 + 30 * 60
 HTTP_READ_BYTES = 2048
@@ -42,16 +37,12 @@ def get_domain(url: str) -> str:
 
 
 async def ffprobe_check(url: str, sem: asyncio.Semaphore) -> Tuple[bool, str, str, str, str, str]:
-    """
-    返回: (ok, width, height, codec, bitrate, fail_reason)
-    fail_reason: ffprobe失败原因，空字符串代表正常
-    """
     proc = None
     try:
         async with sem:
             proc = await asyncio.create_subprocess_exec(
                 "ffprobe",
-                "-user_agent", BROWSER_UA,  # 增加ffprobe自定义UA
+                "-user_agent", BROWSER_UA,
                 "-timeout", "3000000", "-stimeout", "3000000",
                 "-v", "error", "-select_streams", "v:0",
                 "-show_entries", "stream=width,height,codec_name,bit_rate",
@@ -81,7 +72,6 @@ async def ffprobe_check(url: str, sem: asyncio.Semaphore) -> Tuple[bool, str, st
     except Exception as e:
         return False, "", "", "", "", f"ffprobe:exception:{str(e)}"
     finally:
-        # 确保子进程一定被销毁，防止僵尸进程
         if proc is not None and proc.returncode is None:
             try:
                 proc.kill()
@@ -92,10 +82,6 @@ async def ffprobe_check(url: str, sem: asyncio.Semaphore) -> Tuple[bool, str, st
 
 async def test_single(session: aiohttp.ClientSession, http_sem: asyncio.Semaphore, domain_sem_map: dict,
                       ff_sem: asyncio.Semaphore, line: str):
-    """
-    返回 (res, orig_line, err)
-    err:本条任务真实错误信息，空字符串=无错误
-    """
     try:
         line = clean_text(line)
         if not line or "," not in line:
@@ -111,8 +97,9 @@ async def test_single(session: aiohttp.ClientSession, http_sem: asyncio.Semaphor
         async with http_sem, domain_sem_map[dom]:
             st = time.time()
             http_ok = False
+            # ========= 修复关键BUG：全部英文横杠 User-Agent =========
             headers = {
-                "User‑Agent": BROWSER_UA,
+                "User-Agent": BROWSER_UA,
                 "Referer": "https://localhost/"
             }
             try:
@@ -161,7 +148,7 @@ async def main():
         print("[WARN‑STEP4]初处理.txt不存在，退出测速")
         return
 
-    with open(input_path, "r", encoding="utf‑8") as f:
+    with open(input_path, "r", encoding="utf-8") as f:
         lines = [l for l in f if clean_text(l)]
 
     print(f"[STEP4‑DEBUG]待测速 {len(lines)} 条")
@@ -179,8 +166,8 @@ async def main():
     async with aiohttp.ClientSession(connector=connector) as session:
         tasks = [test_single(session, http_sem, domain_sem, ff_sem, ln) for ln in lines]
         completed = 0
-        fv = open(valid_tmp, "w", encoding="utf‑8")
-        ff = open(fail_tmp, "w", encoding="utf‑8")
+        fv = open(valid_tmp, "w", encoding="utf-8")
+        ff = open(fail_tmp, "w", encoding="utf-8")
         try:
             for task in asyncio.as_completed(tasks):
                 if time.time() - speed_start > MAX_SPEED_TEST_RUN_TIME:
@@ -202,15 +189,15 @@ async def main():
                     v_cnt = sum(1 for r in results if r["valid"])
                     print(f"[STEP4‑PROGRESS]已测速 {completed}/{len(lines)}，有效{v_cnt}，失败{len(results)-v_cnt} sample_err={err}")
 
-                # 调试排查时取消下面注释，打印每条错误
-                print(f"[STEP4‑DETAIL] line={orig_line[:80]} err={err}")
+                # 调试时打开，注意缩进
+                # print(f"[STEP4‑DETAIL] line={orig_line[:80]} err={err}")
 
         finally:
             fv.close()
             ff.close()
 
     out_res_tmp = os.path.join(BASE_DIR, ".step4_results.tmp.json")
-    with open(out_res_tmp, "w", encoding="utf‑8") as f:
+    with open(out_res_tmp, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
 
     print(f"[STEP4‑END]测速结束；本轮结果集{len(results)}")
