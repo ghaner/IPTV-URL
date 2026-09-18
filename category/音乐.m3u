@@ -6,33 +6,35 @@ https://vdse.bdstatic.com//06b4e9b185b843e694e4d20e9b0a0aac.mp4
 #EXTINF:-1 group-title="音乐",2021爆红《6首女生版伤感DJ》
 https://vdse.bdstatic.com//2e77709380ad7e6163e80c4d5c179689.mp4
 #EXTINF:-1 group-title="音乐",CCTV15音乐
-http://111.8.242.142:9999/tsfile/live/1049_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="音乐",CCTV15音乐
-http://38.75.136.137:98/gslb/dsdqpub/cctv15hd.m3u8?auth=testpub
+http://bztv.tvbus.cc:8081/cdnlive/cctv15.m3u8
 #EXTINF:-1 group-title="音乐",CCTV15音乐
 http://112.30.73.119:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="音乐",CCTV15音乐
-http://192.151.150.154/live/cctv15hd.m3u8
-#EXTINF:-1 group-title="音乐",CCTV15音乐
-http://bztv.tvbus.cc:8081/cdnlive/cctv15.m3u8
-#EXTINF:-1 group-title="音乐",CCTV15音乐
 http://173.208.212.130:8181/720p/cctv15.m3u8
-#EXTINF:-1 group-title="音乐",CCTV15音乐
-http://218.206.193.218:8888/hls/15/index.m3u8
 #EXTINF:-1 group-title="音乐",CCTV15音乐
 http://111.8.242.127:9999/tsfile/live/1049_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="音乐",CCTV15音乐
+http://192.151.150.154/live/cctv15hd.m3u8
+#EXTINF:-1 group-title="音乐",CCTV15音乐
+http://218.206.193.218:8888/hls/15/index.m3u8
+#EXTINF:-1 group-title="音乐",CCTV15音乐
 http://107.150.60.122/live/cctv15hd.m3u8
+#EXTINF:-1 group-title="音乐",CCTV15音乐
+http://111.8.242.142:9999/tsfile/live/1049_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="音乐",DJ情歌
 https://vdse.bdstatic.com//4d7e8fe409b2ba9e08b179de8e146fa3.mp4
 #EXTINF:-1 group-title="音乐",DJ舞曲
-https://vdse.bdstatic.com//8258cbe0dfd6738613fe9efd33a7a83f.mp4
-#EXTINF:-1 group-title="音乐",DJ舞曲
 https://vdse.bdstatic.com//1fc9fd16e02ca272bb81666b85bf4135.mp4
+#EXTINF:-1 group-title="音乐",DJ舞曲
+https://vdse.bdstatic.com//8258cbe0dfd6738613fe9efd33a7a83f.mp4
+#EXTINF:-1 group-title="音乐",UP主DJC
+https://live.ottiptv.cc/douyu/9429545
 #EXTINF:-1 group-title="音乐",怀旧音乐
 http://vodcdn.video.taobao.com/oss/ali-video/84722d96b62883dafdcc154afbf0bb03/video.m3u8
 #EXTINF:-1 group-title="音乐",放松轻音乐
 https://live.ottiptv.cc/huya/21241813
+#EXTINF:-1 group-title="音乐",热星音乐菌
+https://live.ottiptv.cc/douyu/8405922
 #EXTINF:-1 group-title="音乐",虎牙音乐
 https://live.ottiptv.cc/huya/880207
 #EXTINF:-1 group-title="音乐",音乐台长
@@ -48,8 +50,6 @@ https://live.ottiptv.cc/huya/21241770
 #EXTINF:-1 group-title="音乐",风云音乐
 https://live.264788.xyz/channel/fengyunyinyue?streamid=be37d16b874e7ba11dd383d7ecd75752&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 #EXTINF:-1 group-title="音乐",风云音乐
-https://live.264788.xyz/channel/fengyunyinyue?streamid=1b41fb9153cba3ee19bd5d1b323da27e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
-#EXTINF:-1 group-title="音乐",风云音乐
 http://dassby.qqff.top:99/live/风云音乐/index.m3u8
 #EXTINF:-1 group-title="音乐",风云音乐
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyyy
@@ -57,3 +57,5 @@ http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyyy
 http://183.11.239.36:808/hls/99/index.m3u8
 #EXTINF:-1 group-title="音乐",风云音乐
 http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
+#EXTINF:-1 group-title="音乐",风云音乐
+https://live.264788.xyz/channel/fengyunyinyue?streamid=1b41fb9153cba3ee19bd5d1b323da27e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk

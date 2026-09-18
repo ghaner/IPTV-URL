@@ -1,32 +1,30 @@
 #EXTM3U
 #EXTINF:-1 group-title="电视剧",24H地下交通站全
 https://live.ottiptv.cc/yy/37880083
-#EXTINF:-1 group-title="电视剧",24小时循环播电视剧
-https://live.ottiptv.cc/yy/53320802
-#EXTINF:-1 group-title="电视剧",CCTV8电视剧
-http://107.150.60.122/live/cctv8k.m3u8
-#EXTINF:-1 group-title="电视剧",CCTV8电视剧
-http://112.30.73.119:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 group-title="电视剧",CCTV8电视剧
-http://173.208.212.130:8181/1080p/cctv8.m3u8
 #EXTINF:-1 group-title="电视剧",CCTV8电视剧
 http://111.8.242.142:9999/tsfile/live/1034_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="电视剧",CCTV8电视剧
-http://107.150.60.122/live/cctv8hd.m3u8
-#EXTINF:-1 group-title="电视剧",CCTV8电视剧
-http://198.204.228.26/live/cctv8k.m3u8
 #EXTINF:-1 group-title="电视剧",CCTV8电视剧
 http://38.75.136.137:98/gslb/dsdqbv/cctv8hd.m3u8?auth=test20251009
 #EXTINF:-1 group-title="电视剧",CCTV8电视剧
 http://38.75.136.137:98/gslb/dsdqpub/cctv8k.m3u8?auth=testpub
 #EXTINF:-1 group-title="电视剧",CCTV8电视剧
+http://107.150.60.122/live/cctv8k.m3u8
+#EXTINF:-1 group-title="电视剧",CCTV8电视剧
 http://198.204.228.26/live/cctv8hd.m3u8
 #EXTINF:-1 group-title="电视剧",CCTV8电视剧
-http://192.151.150.154/live/cctv8hd.m3u8
+http://198.204.228.26/live/cctv8k.m3u8
+#EXTINF:-1 group-title="电视剧",CCTV8电视剧
+http://107.150.60.122/live/cctv8hd.m3u8
 #EXTINF:-1 group-title="电视剧",CCTV8电视剧
 http://173.208.212.130:8181/720p/cctv8.m3u8
 #EXTINF:-1 group-title="电视剧",CCTV8电视剧
 http://218.206.193.218:8888/hls/8/index.m3u8
+#EXTINF:-1 group-title="电视剧",CCTV8电视剧
+http://112.30.73.119:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 group-title="电视剧",CCTV8电视剧
+http://192.151.150.154/live/cctv8hd.m3u8
+#EXTINF:-1 group-title="电视剧",CCTV8电视剧
+http://173.208.212.130:8181/1080p/cctv8.m3u8
 #EXTINF:-1 group-title="电视剧",【狂飙】
 https://live.ottiptv.cc/yy/1354806550
 #EXTINF:-1 group-title="电视剧",三国演义
@@ -37,6 +35,8 @@ https://live.ottiptv.cc/douyu/12886210
 https://live.ottiptv.cc/yy/1354936241
 #EXTINF:-1 group-title="电视剧",三国演义【1994】
 https://live.ottiptv.cc/yy/1354930932
+#EXTINF:-1 group-title="电视剧",乡村爱情
+http://tv.zimtv.cn/tv/player/api/huya.php?id=30080255
 #EXTINF:-1 group-title="电视剧",亲爱的热爱的
 https://live.ottiptv.cc/yy/1354932433
 #EXTINF:-1 group-title="电视剧",仙剑奇侠传-神仙姐姐驾到
@@ -46,13 +46,13 @@ https://live.ottiptv.cc/yy/1354936244
 #EXTINF:-1 group-title="电视剧",你是我的荣耀
 https://live.ottiptv.cc/yy/1354931488
 #EXTINF:-1 group-title="电视剧",刑事侦缉档案
-https://live.metshop.top/huya/29465856
-#EXTINF:-1 group-title="电视剧",刑事侦缉档案
 http://tv.zimtv.cn/tv/player/api/huya.php?id=29465856
-#EXTINF:-1 group-title="电视剧",创世纪
-https://live.metshop.top/huya/29465852
+#EXTINF:-1 group-title="电视剧",刑事侦缉档案
+https://live.metshop.top/huya/29465856
 #EXTINF:-1 group-title="电视剧",创世纪
 http://tv.zimtv.cn/tv/player/api/huya.php?id=29465852
+#EXTINF:-1 group-title="电视剧",创世纪
+https://live.metshop.top/huya/29465852
 #EXTINF:-1 group-title="电视剧",历史的天空
 https://vdse.bdstatic.com//7086b524b8cac0cbb3d2c94a689466d7.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2024-03-13T08%3A31%3A03Z%2F-1%2Fhost%2Fe105a71f9d0ca894260c1c579ef9ea58154b36e03976341ac7f253c74fbecb0c&vid=16793485223360564856
 #EXTINF:-1 group-title="电视剧",唐朝诡事录3
@@ -79,6 +79,8 @@ https://live.ottiptv.cc/yy/1382735569
 https://live.ottiptv.cc/yy/1382736806
 #EXTINF:-1 group-title="电视剧",天道-9.2高分好剧
 https://live.ottiptv.cc/yy/1382735574
+#EXTINF:-1 group-title="电视剧",好先生
+https://live.ottiptv.cc/yy/79382500
 #EXTINF:-1 group-title="电视剧",威猛先生
 https://live.ottiptv.cc/huya/11342420
 #EXTINF:-1 group-title="电视剧",孙红雷经典电视剧-二炮手
@@ -101,8 +103,6 @@ https://live.ottiptv.cc/yy/1354936141
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11352960
 #EXTINF:-1 group-title="电视剧",康熙微服私访记
 https://live.ottiptv.cc/yy/1352811698
-#EXTINF:-1 group-title="电视剧",御赐小仵作
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11352948
 #EXTINF:-1 group-title="电视剧",情满四合院-高分电视剧
 https://live.ottiptv.cc/yy/1382735541
 #EXTINF:-1 group-title="电视剧",憨豆先生-经典喜剧
@@ -113,8 +113,6 @@ https://live.ottiptv.cc/yy/1382745169
 https://live.ottiptv.cc/yy/1382735564
 #EXTINF:-1 group-title="电视剧",新时代农村青年的热血奋斗记
 https://live.ottiptv.cc/yy/1382736715
-#EXTINF:-1 group-title="电视剧",新水浒传
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11342384
 #EXTINF:-1 group-title="电视剧",新白娘子传奇
 https://live.ottiptv.cc/yy/1354490667
 #EXTINF:-1 group-title="电视剧",新白娘子传奇-女神赵雅芝
@@ -140,17 +138,17 @@ http://tv.zimtv.cn/tv/player/api/huya.php?id=29465861
 #EXTINF:-1 group-title="电视剧",深圳电视剧频道
 http://183.11.239.36:808/hls/141/index.m3u8
 #EXTINF:-1 group-title="电视剧",湖南电视剧
-http://nn.7x9d.cn/地方台8563/湖南2.php?id=484
-#EXTINF:-1 group-title="电视剧",湖南电视剧
 http://php.jdshipin.com:8880/iptv.php?id=hndsj
+#EXTINF:-1 group-title="电视剧",湖南电视剧
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=hndsj
 #EXTINF:-1 group-title="电视剧",湖南电视剧
 http://218.77.84.102:85/tsfile/live/148/2004_1.m3u8?key=txiptv
 #EXTINF:-1 group-title="电视剧",湖南电视剧
-http://php.jdshipin.com:8880/TVOD/iptv.php?id=hndsj
-#EXTINF:-1 group-title="电视剧",父母爱情
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11602071
-#EXTINF:-1 group-title="电视剧",父母爱情
-https://live.ottiptv.cc/yy/1354926650
+http://nn.7x9d.cn/地方台8563/湖南2.php?id=484
+#EXTINF:-1 group-title="电视剧",潜伏sc
+https://live.ottiptv.cc/douyu/9458345
+#EXTINF:-1 group-title="电视剧",爱情公寓
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11336726
 #EXTINF:-1 group-title="电视剧",狂飙
 https://live.ottiptv.cc/yy/1382626335
 #EXTINF:-1 group-title="电视剧",电视剧-流金岁月
@@ -166,17 +164,17 @@ https://live.ottiptv.cc/yy/1382741639
 #EXTINF:-1 group-title="电视剧",知否知否应是绿肥红瘦
 https://live.ottiptv.cc/yy/1354936134
 #EXTINF:-1 group-title="电视剧",神医喜来乐
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11601978
-#EXTINF:-1 group-title="电视剧",神医喜来乐
 https://live.ottiptv.cc/yy/1382714119
+#EXTINF:-1 group-title="电视剧",神医喜来乐
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11601978
 #EXTINF:-1 group-title="电视剧",神探狄仁杰1
 https://live.ottiptv.cc/yy/1354930934
 #EXTINF:-1 group-title="电视剧",笑傲江湖
 https://live.metshop.top/huya/26355790
 #EXTINF:-1 group-title="电视剧",笑傲江湖
-https://live.metshop.top/huya/23865142
-#EXTINF:-1 group-title="电视剧",笑傲江湖
 http://tv.zimtv.cn/tv/player/api/huya.php?id=26355790
+#EXTINF:-1 group-title="电视剧",笑傲江湖
+https://live.metshop.top/huya/23865142
 #EXTINF:-1 group-title="电视剧",笑傲江湖 第1季
 https://live.ottiptv.cc/yy/1382749896
 #EXTINF:-1 group-title="电视剧",笑傲江湖 第2季
@@ -186,13 +184,13 @@ https://live.metshop.top/huya/29465858
 #EXTINF:-1 group-title="电视剧",精绝古城
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11352871
 #EXTINF:-1 group-title="电视剧",西游记
-http://live.ottiptv.cc/huya/20985836
-#EXTINF:-1 group-title="电视剧",西游记
 http://173.208.234.146/live/vlxyj.m3u8
+#EXTINF:-1 group-title="电视剧",西游记
+https://lbds.us.ci/26355861
 #EXTINF:-1 group-title="电视剧",西游记
 https://live.metshop.top/huya/26355861
 #EXTINF:-1 group-title="电视剧",西游记
-https://lbds.us.ci/26355861
+http://live.ottiptv.cc/huya/20985836
 #EXTINF:-1 group-title="电视剧",西游记2
 https://live.metshop.top/huya/29465859
 #EXTINF:-1 group-title="电视剧",西游记后传
@@ -201,28 +199,30 @@ https://live.ottiptv.cc/yy/1382736846
 https://live.ottiptv.cc/yy/1353392400
 #EXTINF:-1 group-title="电视剧",赘婿
 https://live.ottiptv.cc/yy/1462010221
+#EXTINF:-1 group-title="电视剧",超喜剧地下交通站男神贾贵
+https://live.ottiptv.cc/yy/1353428972
 #EXTINF:-1 group-title="电视剧",躺平还是奋斗？搞笑中见真谛
 https://live.ottiptv.cc/yy/1382851586
 #EXTINF:-1 group-title="电视剧",迈阿密行动街头狂飙
 https://live.ottiptv.cc/yy/1354936228
 #EXTINF:-1 group-title="电视剧",邻里一家亲
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11342426
+#EXTINF:-1 group-title="电视剧",都挺好
+http://tv.zimtv.cn/tv/player/api/huya.php?id=21059594
+#EXTINF:-1 group-title="电视剧",金枝欲孽
+https://live.metshop.top/huya/29465847
 #EXTINF:-1 group-title="电视剧",金枝欲孽
 http://tv.zimtv.cn/tv/player/api/huya.php?id=29465847
 #EXTINF:-1 group-title="电视剧",金枝欲孽
 http://tv.zimtv.cn/tv/player/api/huya.php?id=23865036
-#EXTINF:-1 group-title="电视剧",金枝欲孽
-https://live.metshop.top/huya/29465847
 #EXTINF:-1 group-title="电视剧",鉴证实录
 http://tv.zimtv.cn/tv/player/api/huya.php?id=23903183
 #EXTINF:-1 group-title="电视剧",鉴证实录
 https://live.metshop.top/huya/23903183
 #EXTINF:-1 group-title="电视剧",闯关东
-https://live.ottiptv.cc/yy/1383546866
-#EXTINF:-1 group-title="电视剧",闯关东
 http://173.208.234.146/live/lbchuangguandong.m3u8
-#EXTINF:-1 group-title="电视剧",陀枪师姐
-http://tv.zimtv.cn/tv/player/api/huya.php?id=23860039
+#EXTINF:-1 group-title="电视剧",闯关东
+https://live.ottiptv.cc/yy/1383546866
 #EXTINF:-1 group-title="电视剧",陀枪师姐
 https://live.metshop.top/huya/29465857
 #EXTINF:-1 group-title="电视剧",陆贞传奇

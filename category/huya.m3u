@@ -61,8 +61,6 @@ https://live.ottiptv.cc/huya/11352936
 https://live.ottiptv.cc/huya/314676
 #EXTINF:-1 group-title="huya",No1常在心
 https://live.ottiptv.cc/huya/11342402
-#EXTINF:-1 group-title="huya",Q版三国
-http://tv.zimtv.cn/tv/player/api/huya.php?id=29465871
 #EXTINF:-1 group-title="huya",RainyRabbits
 https://live.ottiptv.cc/huya/30080172
 #EXTINF:-1 group-title="huya",SJ-小欢
@@ -189,8 +187,6 @@ https://live.ottiptv.cc/huya/26355798
 https://live.ottiptv.cc/huya/11342403
 #EXTINF:-1 group-title="huya",不能全鱼
 https://live.ottiptv.cc/huya/26355771
-#EXTINF:-1 group-title="huya",不良人
-http://tv.zimtv.cn/tv/player/api/huya.php?id=30080218
 #EXTINF:-1 group-title="huya",与凤行
 http://live.ottiptv.cc/huya/26355866
 #EXTINF:-1 group-title="huya",专情于你
@@ -241,6 +237,8 @@ https://live.ottiptv.cc/huya/17943364
 https://live.ottiptv.cc/huya/30631704
 #EXTINF:-1 group-title="huya",九思剧场
 https://live.ottiptv.cc/huya/30569910
+#EXTINF:-1 group-title="huya",乡村爱情
+http://tv.zimtv.cn/tv/player/api/huya.php?id=30080255
 #EXTINF:-1 group-title="huya",了不起的小萌虎
 https://live.ottiptv.cc/huya/11342388
 #EXTINF:-1 group-title="huya",予笙
@@ -334,9 +332,9 @@ https://live.ottiptv.cc/huya/11602081
 #EXTINF:-1 group-title="huya",全糖艳麦zoo
 https://live.ottiptv.cc/huya/31183563
 #EXTINF:-1 group-title="huya",全职高手
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11352901
-#EXTINF:-1 group-title="huya",全职高手
 http://tv.zimtv.cn/tv/player/api/huya.php?id=21059628
+#EXTINF:-1 group-title="huya",全职高手
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11352901
 #EXTINF:-1 group-title="huya",全能偶像
 https://live.ottiptv.cc/huya/21241763
 #EXTINF:-1 group-title="huya",全能改造王
@@ -376,17 +374,17 @@ https://live.ottiptv.cc/huya/29982661
 #EXTINF:-1 group-title="huya",击剑的爱好者
 https://live.ottiptv.cc/huya/30080152
 #EXTINF:-1 group-title="huya",刑事侦缉档案
-https://live.metshop.top/huya/29465856
-#EXTINF:-1 group-title="huya",刑事侦缉档案
 http://tv.zimtv.cn/tv/player/api/huya.php?id=29465856
+#EXTINF:-1 group-title="huya",刑事侦缉档案
+https://live.metshop.top/huya/29465856
 #EXTINF:-1 group-title="huya",刘德华-电影
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11342424
 #EXTINF:-1 group-title="huya",刘德华电影
 https://live.metshop.top/huya/11342424
 #EXTINF:-1 group-title="huya",创世纪
-https://live.metshop.top/huya/29465852
-#EXTINF:-1 group-title="huya",创世纪
 http://tv.zimtv.cn/tv/player/api/huya.php?id=29465852
+#EXTINF:-1 group-title="huya",创世纪
+https://live.metshop.top/huya/29465852
 #EXTINF:-1 group-title="huya",初心
 https://live.ottiptv.cc/huya/11352941
 #EXTINF:-1 group-title="huya",初秋色柠檬
@@ -489,6 +487,8 @@ https://live.ottiptv.cc/huya/31140717
 https://live.ottiptv.cc/huya/29982675
 #EXTINF:-1 group-title="huya",古咕咕
 https://live.ottiptv.cc/huya/29465875
+#EXTINF:-1 group-title="huya",古天乐-电影
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11602041
 #EXTINF:-1 group-title="huya",古天乐电影
 https://live.metshop.top/huya/29982675
 #EXTINF:-1 group-title="huya",只爱评书
@@ -531,6 +531,8 @@ https://live.ottiptv.cc/huya/15321830
 https://live.ottiptv.cc/huya/30307439
 #EXTINF:-1 group-title="huya",君陌观影
 https://live.ottiptv.cc/huya/29420446
+#EXTINF:-1 group-title="huya",吞噬星空
+http://tv.zimtv.cn/tv/player/api/huya.php?id=23902242
 #EXTINF:-1 group-title="huya",听见歌声
 https://live.ottiptv.cc/huya/21241793
 #EXTINF:-1 group-title="huya",吹绿令人老
@@ -679,10 +681,10 @@ https://live.ottiptv.cc/huya/21277391
 https://live.ottiptv.cc/huya/26355768
 #EXTINF:-1 group-title="huya",大铁锅炖大大鹅
 https://live.ottiptv.cc/huya/21059574
+#EXTINF:-1 group-title="huya",大鱼爱路飞
+https://live.ottiptv.cc/huya/25818873
 #EXTINF:-1 group-title="huya",大鹅观影
 https://live.ottiptv.cc/huya/30292065
-#EXTINF:-1 group-title="huya",天仙配
-http://tv.zimtv.cn/tv/player/api/huya.php?id=29982663
 #EXTINF:-1 group-title="huya",天地間香芒
 https://live.ottiptv.cc/huya/26355800
 #EXTINF:-1 group-title="huya",天德力已殚
@@ -692,9 +694,9 @@ https://live.ottiptv.cc/huya/29465899
 #EXTINF:-1 group-title="huya",天雷鼓鼓说剧
 https://live.ottiptv.cc/huya/30277823
 #EXTINF:-1 group-title="huya",天龙八部
-https://live.metshop.top/huya/23903123
-#EXTINF:-1 group-title="huya",天龙八部
 https://live.metshop.top/huya/20985816
+#EXTINF:-1 group-title="huya",天龙八部
+https://live.metshop.top/huya/23903123
 #EXTINF:-1 group-title="huya",头上在眼前
 https://live.ottiptv.cc/huya/30307331
 #EXTINF:-1 group-title="huya",奇幻冒险家
@@ -721,6 +723,8 @@ https://live.ottiptv.cc/huya/11352945
 http://tv.zimtv.cn/tv/player/api/huya.php?id=29465853
 #EXTINF:-1 group-title="huya",妙手仁心
 https://live.metshop.top/huya/29465853
+#EXTINF:-1 group-title="huya",妙手仁心
+http://tv.zimtv.cn/tv/player/api/huya.php?id=23829543
 #EXTINF:-1 group-title="huya",威尼斯的贡多拉
 https://live.ottiptv.cc/huya/29465883
 #EXTINF:-1 group-title="huya",威猛先生
@@ -749,14 +753,14 @@ https://live.ottiptv.cc/huya/11342424
 https://live.ottiptv.cc/huya/26355770
 #EXTINF:-1 group-title="huya",宝玉不姓贾
 https://live.ottiptv.cc/huya/20985866
+#EXTINF:-1 group-title="huya",宝莲灯
+http://tv.zimtv.cn/tv/player/api/huya.php?id=21059563
 #EXTINF:-1 group-title="huya",宝莲灯前传
 http://tv.zimtv.cn/tv/player/api/huya.php?id=21059557
 #EXTINF:-1 group-title="huya",实力拔萝卜
 https://live.ottiptv.cc/huya/11601960
 #EXTINF:-1 group-title="huya",宠物电竞领主
 https://live.ottiptv.cc/huya/30080235
-#EXTINF:-1 group-title="huya",宫崎骏
-http://tv.zimtv.cn/tv/player/api/huya.php?id=21059614
 #EXTINF:-1 group-title="huya",宫斗剧
 http://tv.zimtv.cn/tv/player/api/huya.php?id=29465868
 #EXTINF:-1 group-title="huya",家有儿女
@@ -927,6 +931,8 @@ https://live.ottiptv.cc/huya/29982671
 https://live.ottiptv.cc/huya/30080226
 #EXTINF:-1 group-title="huya",带巫婆的黑猫
 https://live.ottiptv.cc/huya/29465890
+#EXTINF:-1 group-title="huya",常先声
+https://live.ottiptv.cc/huya/275931
 #EXTINF:-1 group-title="huya",年年营
 https://live.ottiptv.cc/huya/29580970
 #EXTINF:-1 group-title="huya",年月犬
@@ -949,8 +955,6 @@ https://live.ottiptv.cc/huya/11342387
 https://live.ottiptv.cc/huya/20985841
 #EXTINF:-1 group-title="huya",张医生
 https://live.ottiptv.cc/huya/11342415
-#EXTINF:-1 group-title="huya",张卫健孙悟空
-http://tv.zimtv.cn/tv/player/api/huya.php?id=29465860
 #EXTINF:-1 group-title="huya",张卫健版鹿鼎记
 http://tv.zimtv.cn/tv/player/api/huya.php?id=26355806
 #EXTINF:-1 group-title="huya",弹一闪闪闪
@@ -969,12 +973,12 @@ https://live.ottiptv.cc/huya/30311494
 https://live.ottiptv.cc/huya/30522289
 #EXTINF:-1 group-title="huya",律动无限
 https://live.ottiptv.cc/huya/21241797
+#EXTINF:-1 group-title="huya",徐克-电影
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11352909
 #EXTINF:-1 group-title="huya",徒步喜马拉雅
 https://live.ottiptv.cc/huya/24609811
 #EXTINF:-1 group-title="huya",御所田南通
 https://live.ottiptv.cc/huya/26355773
-#EXTINF:-1 group-title="huya",御赐小仵作
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11352948
 #EXTINF:-1 group-title="huya",微凉不小行
 https://live.ottiptv.cc/huya/30080215
 #EXTINF:-1 group-title="huya",微微爱宝宝
@@ -1007,8 +1011,6 @@ https://live.ottiptv.cc/huya/31183556
 https://live.ottiptv.cc/huya/11602075
 #EXTINF:-1 group-title="huya",怪兽电影
 https://live.metshop.top/huya/21059577
-#EXTINF:-1 group-title="huya",总动员电影
-http://tv.zimtv.cn/tv/player/api/huya.php?id=30080256
 #EXTINF:-1 group-title="huya",恶魔宝钧
 https://live.ottiptv.cc/huya/30080242
 #EXTINF:-1 group-title="huya",悠悠爱电影
@@ -1052,43 +1054,43 @@ https://live.ottiptv.cc/huya/21059634
 #EXTINF:-1 group-title="huya",我才是打工人
 https://live.ottiptv.cc/huya/23860039
 #EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/24314166
-#EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/24314165
-#EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/21059616
-#EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/24314158
-#EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/21241845
-#EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/24314162
-#EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/24314021
-#EXTINF:-1 group-title="huya",我是一颗小虎牙
 https://live.ottiptv.cc/huya/24314160
-#EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/31178504
 #EXTINF:-1 group-title="huya",我是一颗小虎牙
 https://live.ottiptv.cc/huya/21241841
 #EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/21241840
+https://live.ottiptv.cc/huya/21059616
 #EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/24314157
+https://live.ottiptv.cc/huya/24314021
+#EXTINF:-1 group-title="huya",我是一颗小虎牙
+https://live.ottiptv.cc/huya/21241801
+#EXTINF:-1 group-title="huya",我是一颗小虎牙
+https://live.ottiptv.cc/huya/31178504
 #EXTINF:-1 group-title="huya",我是一颗小虎牙
 https://live.ottiptv.cc/huya/20985853
 #EXTINF:-1 group-title="huya",我是一颗小虎牙
+https://live.ottiptv.cc/huya/24314158
+#EXTINF:-1 group-title="huya",我是一颗小虎牙
+https://live.ottiptv.cc/huya/24314157
+#EXTINF:-1 group-title="huya",我是一颗小虎牙
+https://live.ottiptv.cc/huya/24314165
+#EXTINF:-1 group-title="huya",我是一颗小虎牙
+https://live.ottiptv.cc/huya/24314163
+#EXTINF:-1 group-title="huya",我是一颗小虎牙
 https://live.ottiptv.cc/huya/21241844
+#EXTINF:-1 group-title="huya",我是一颗小虎牙
+https://live.ottiptv.cc/huya/24314162
 #EXTINF:-1 group-title="huya",我是一颗小虎牙
 https://live.ottiptv.cc/huya/24314159
 #EXTINF:-1 group-title="huya",我是一颗小虎牙
 https://live.ottiptv.cc/huya/20985765
 #EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/21241801
+https://live.ottiptv.cc/huya/24314166
+#EXTINF:-1 group-title="huya",我是一颗小虎牙
+https://live.ottiptv.cc/huya/21241845
 #EXTINF:-1 group-title="huya",我是一颗小虎牙
 https://live.ottiptv.cc/huya/21241843
 #EXTINF:-1 group-title="huya",我是一颗小虎牙
-https://live.ottiptv.cc/huya/24314163
+https://live.ottiptv.cc/huya/21241840
 #EXTINF:-1 group-title="huya",我是三三呀
 https://live.ottiptv.cc/huya/25105263
 #EXTINF:-1 group-title="huya",我是周粤驰
@@ -1187,8 +1189,6 @@ https://live.ottiptv.cc/huya/26355774
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11352944
 #EXTINF:-1 group-title="huya",新奇好玩喵
 https://live.ottiptv.cc/huya/21059610
-#EXTINF:-1 group-title="huya",新水浒传
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11342384
 #EXTINF:-1 group-title="huya",斷桥斯氏杯
 https://live.ottiptv.cc/huya/26355786
 #EXTINF:-1 group-title="huya",方显出英仍无骨
@@ -1247,8 +1247,6 @@ https://live.ottiptv.cc/huya/31295293
 https://live.ottiptv.cc/huya/30080155
 #EXTINF:-1 group-title="huya",暴走君丶阿罪
 https://live.ottiptv.cc/huya/11342423
-#EXTINF:-1 group-title="huya",曾江-电影
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11601981
 #EXTINF:-1 group-title="huya",替你挨过揍的朋友
 https://live.ottiptv.cc/huya/11602045
 #EXTINF:-1 group-title="huya",最篮球
@@ -1377,8 +1375,6 @@ https://live.metshop.top/huya/11342427
 https://live.ottiptv.cc/huya/29982611
 #EXTINF:-1 group-title="huya",武林萌主唐小姐
 https://live.ottiptv.cc/huya/11336726
-#EXTINF:-1 group-title="huya",死神来了
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11352903
 #EXTINF:-1 group-title="huya",毁你男神做你男人
 https://live.ottiptv.cc/huya/353798
 #EXTINF:-1 group-title="huya",母胎solo200年
@@ -1389,6 +1385,8 @@ https://live.ottiptv.cc/huya/11601982
 https://live.ottiptv.cc/huya/20969114
 #EXTINF:-1 group-title="huya",每日读书
 https://live.ottiptv.cc/huya/20985826
+#EXTINF:-1 group-title="huya",民调局异闻录
+http://tv.zimtv.cn/tv/player/api/huya.php?id=26355820
 #EXTINF:-1 group-title="huya",民谣在路上
 https://live.ottiptv.cc/huya/21241764
 #EXTINF:-1 group-title="huya",水井虎
@@ -1440,9 +1438,9 @@ https://live.ottiptv.cc/huya/31001892
 #EXTINF:-1 group-title="huya",泱泱看剧
 https://live.ottiptv.cc/huya/30373462
 #EXTINF:-1 group-title="huya",洗冤录
-http://tv.zimtv.cn/tv/player/api/huya.php?id=23903130
-#EXTINF:-1 group-title="huya",洗冤录
 https://live.metshop.top/huya/29465851
+#EXTINF:-1 group-title="huya",洗冤录
+http://tv.zimtv.cn/tv/player/api/huya.php?id=23903130
 #EXTINF:-1 group-title="huya",活泼如清泉
 https://live.ottiptv.cc/huya/30826141
 #EXTINF:-1 group-title="huya",活泼有趣的熊猫
@@ -1549,14 +1547,14 @@ https://live.ottiptv.cc/huya/29982678
 https://live.ottiptv.cc/huya/18501378
 #EXTINF:-1 group-title="huya",爱吃芒果的香蕉
 https://live.ottiptv.cc/huya/20985865
+#EXTINF:-1 group-title="huya",爱情公寓
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11336726
 #EXTINF:-1 group-title="huya",爱情电影放映厅
 https://live.ottiptv.cc/huya/29982639
 #EXTINF:-1 group-title="huya",爱爱爱看剧
 https://live.ottiptv.cc/huya/31169587
 #EXTINF:-1 group-title="huya",爱豆来了
 https://live.ottiptv.cc/huya/20432236
-#EXTINF:-1 group-title="huya",父母爱情
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11602071
 #EXTINF:-1 group-title="huya",牙缝多了根青菜
 https://live.ottiptv.cc/huya/11352877
 #EXTINF:-1 group-title="huya",牛奶可可球XD
@@ -1631,6 +1629,8 @@ https://live.ottiptv.cc/huya/20985833
 https://live.ottiptv.cc/huya/20969145
 #EXTINF:-1 group-title="huya",由心婧婧
 https://live.ottiptv.cc/huya/31311890
+#EXTINF:-1 group-title="huya",电影_不挤影院
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11352897
 #EXTINF:-1 group-title="huya",电影_丧尸片
 http://tv.zimtv.cn/tv/player/api/huya.php?id=21059578
 #EXTINF:-1 group-title="huya",电影_战争
@@ -1743,6 +1743,8 @@ https://live.ottiptv.cc/huya/31002878
 https://live.ottiptv.cc/huya/23749074
 #EXTINF:-1 group-title="huya",硬控rap
 https://live.ottiptv.cc/huya/29982630
+#EXTINF:-1 group-title="huya",硬汉007
+http://tv.zimtv.cn/tv/player/api/huya.php?id=21059585
 #EXTINF:-1 group-title="huya",硬汉影探
 https://live.ottiptv.cc/huya/24614407
 #EXTINF:-1 group-title="huya",神医喜来乐
@@ -1774,9 +1776,9 @@ https://live.ottiptv.cc/huya/11352967
 #EXTINF:-1 group-title="huya",笑傲江湖
 https://live.metshop.top/huya/26355790
 #EXTINF:-1 group-title="huya",笑傲江湖
-https://live.metshop.top/huya/23865142
-#EXTINF:-1 group-title="huya",笑傲江湖
 http://tv.zimtv.cn/tv/player/api/huya.php?id=26355790
+#EXTINF:-1 group-title="huya",笑傲江湖
+https://live.metshop.top/huya/23865142
 #EXTINF:-1 group-title="huya",笑看风云
 https://live.metshop.top/huya/29465858
 #EXTINF:-1 group-title="huya",笑笑
@@ -1801,8 +1803,10 @@ https://live.ottiptv.cc/huya/21059572
 https://live.ottiptv.cc/huya/30080148
 #EXTINF:-1 group-title="huya",精绝古城
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11352871
-#EXTINF:-1 group-title="huya",精选10
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11352913
+#EXTINF:-1 group-title="huya",精选18
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11601960
+#EXTINF:-1 group-title="huya",精选2
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11352884
 #EXTINF:-1 group-title="huya",精选20
 http://tv.zimtv.cn/tv/player/api/huya.php?id=21059554
 #EXTINF:-1 group-title="huya",精选21
@@ -1815,14 +1819,18 @@ http://tv.zimtv.cn/tv/player/api/huya.php?id=21059579
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11352934
 #EXTINF:-1 group-title="huya",精选31
 http://tv.zimtv.cn/tv/player/api/huya.php?id=21059552
+#EXTINF:-1 group-title="huya",精选34
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11352877
 #EXTINF:-1 group-title="huya",精选36
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11352973
-#EXTINF:-1 group-title="huya",精选5
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11602044
+#EXTINF:-1 group-title="huya",精选4
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11342423
 #EXTINF:-1 group-title="huya",精选54
 http://tv.zimtv.cn/tv/player/api/huya.php?id=21059577
 #EXTINF:-1 group-title="huya",精选56
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11342414
+#EXTINF:-1 group-title="huya",精选8
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11342435
 #EXTINF:-1 group-title="huya",精选9
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11342419
 #EXTINF:-1 group-title="huya",糊了的胡萝卜
@@ -2048,9 +2056,9 @@ https://live.ottiptv.cc/huya/29465893
 #EXTINF:-1 group-title="huya",西忆故人喧昨晚
 https://live.ottiptv.cc/huya/26355804
 #EXTINF:-1 group-title="huya",西游记
-http://live.ottiptv.cc/huya/20985836
-#EXTINF:-1 group-title="huya",西游记
 https://live.metshop.top/huya/26355861
+#EXTINF:-1 group-title="huya",西游记
+http://live.ottiptv.cc/huya/20985836
 #EXTINF:-1 group-title="huya",西游记2
 https://live.metshop.top/huya/29465859
 #EXTINF:-1 group-title="huya",西班牙巴斯光年
@@ -2108,9 +2116,9 @@ https://live.ottiptv.cc/huya/15894162
 #EXTINF:-1 group-title="huya",越哥说电影2
 https://live.ottiptv.cc/huya/29982680
 #EXTINF:-1 group-title="huya",越式酥麻
-https://live.ottiptv.cc/huya/30764822
-#EXTINF:-1 group-title="huya",越式酥麻
 https://live.ottiptv.cc/huya/30764818
+#EXTINF:-1 group-title="huya",越式酥麻
+https://live.ottiptv.cc/huya/30764822
 #EXTINF:-1 group-title="huya",跳水这件事
 https://live.ottiptv.cc/huya/29982662
 #EXTINF:-1 group-title="huya",身外桂鱼
@@ -2139,6 +2147,8 @@ https://live.ottiptv.cc/huya/26355787
 https://live.ottiptv.cc/huya/29982656
 #EXTINF:-1 group-title="huya",迷你鱼
 https://live.ottiptv.cc/huya/20985773
+#EXTINF:-1 group-title="huya",迷失
+https://live.ottiptv.cc/huya/11602041
 #EXTINF:-1 group-title="huya",追剧大湾区
 https://live.ottiptv.cc/huya/23735126
 #EXTINF:-1 group-title="huya",追娘娘陪你看
@@ -2155,6 +2165,8 @@ https://live.ottiptv.cc/huya/20985771
 https://live.ottiptv.cc/huya/30765290
 #EXTINF:-1 group-title="huya",邻里一家亲
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11342426
+#EXTINF:-1 group-title="huya",都挺好
+http://tv.zimtv.cn/tv/player/api/huya.php?id=21059594
 #EXTINF:-1 group-title="huya",都爱看
 https://live.ottiptv.cc/huya/26058097
 #EXTINF:-1 group-title="huya",都護鐵衣也君子
@@ -2188,11 +2200,11 @@ https://live.ottiptv.cc/huya/20072663
 #EXTINF:-1 group-title="huya",金庸武侠
 https://live.metshop.top/huya/11342435
 #EXTINF:-1 group-title="huya",金枝欲孽
+https://live.metshop.top/huya/29465847
+#EXTINF:-1 group-title="huya",金枝欲孽
 http://tv.zimtv.cn/tv/player/api/huya.php?id=29465847
 #EXTINF:-1 group-title="huya",金枝欲孽
 http://tv.zimtv.cn/tv/player/api/huya.php?id=23865036
-#EXTINF:-1 group-title="huya",金枝欲孽
-https://live.metshop.top/huya/29465847
 #EXTINF:-1 group-title="huya",鉴证实录
 http://tv.zimtv.cn/tv/player/api/huya.php?id=23903183
 #EXTINF:-1 group-title="huya",鉴证实录
@@ -2219,8 +2231,6 @@ https://live.ottiptv.cc/huya/20969133
 https://live.ottiptv.cc/huya/31141838
 #EXTINF:-1 group-title="huya",长岛冰茶-
 https://live.ottiptv.cc/huya/11352884
-#EXTINF:-1 group-title="huya",问心
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11352890
 #EXTINF:-1 group-title="huya",阿光影视
 https://live.ottiptv.cc/huya/30292086
 #EXTINF:-1 group-title="huya",阿叁
@@ -2253,8 +2263,6 @@ https://live.ottiptv.cc/huya/20488841
 https://live.ottiptv.cc/huya/23863833
 #EXTINF:-1 group-title="huya",阿飞
 https://live.ottiptv.cc/huya/11352934
-#EXTINF:-1 group-title="huya",陀枪师姐
-http://tv.zimtv.cn/tv/player/api/huya.php?id=23860039
 #EXTINF:-1 group-title="huya",陀枪师姐
 https://live.metshop.top/huya/29465857
 #EXTINF:-1 group-title="huya",陆贞传奇
@@ -2393,5 +2401,3 @@ https://live.ottiptv.cc/huya/20985791
 https://live.ottiptv.cc/huya/30080195
 #EXTINF:-1 group-title="huya",齐鲁影视
 https://live.ottiptv.cc/huya/29807061
-#EXTINF:-1 group-title="huya",龙岭迷窟
-http://tv.zimtv.cn/tv/player/api/huya.php?id=29465863
