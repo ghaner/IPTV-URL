@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 group-title="四平",四平新闻综合
+https://stream2.jlntv.cn/sptv/sd/live.m3u8
+#EXTINF:-1 group-title="四平",四平综合
+http://stream2.jlntv.cn/sptv/sd/live.m3u8
+#EXTINF:-1 group-title="四平",四平青年喋血曼谷
+https://live.ottiptv.cc/yy/1382749950
