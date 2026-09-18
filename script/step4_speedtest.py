@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
-"""Step4：读取初处理.txt执行测速【修复bug+GitHub Action提速调参版】
-修复清单：
-1. HTTP头User‑Agent中文全角横杠 → 英文User‑Agent
-2. ffprobe 使用正确 -http_user_agent
-3. 删除废弃 -stimeout，使用 -rw_timeout
-调参：提高并发、放宽单域名限流、缩短IO超时，平衡速度与防盗链风险
-新增强化：测速善终提前结束
-  整个action运行5小时30分钟时，如果测速任务还未完成
-  终止测速任务；将已完成测速的直播源分有效源和失败源进行输出保存，供给后续步骤处理
+"""Step4：读取初处理.txt执行测速【最终定稿】
+已确认改动清单：
+1. HTTP头 User‑Agent 使用英文横杠
+2. ffprobe 使用正确参数 -http_user_agent
+3. 删除废弃 -stimeout，改用 -rw_timeout
+4. 提速调参：并发、单域名限流、IO超时
+5. 5小时30分钟测速善终提前结束，部分结果落盘供下游继续处理
+无额外私自增加逻辑，移除 family=4
 """
 import asyncio
 import aiohttp
@@ -29,7 +28,7 @@ DOMAIN_MAX_CONCURRENCY = 6   # 单个域名最大并发请求
 TIMEOUT = 10                 # http总超时 秒
 FF_RW_TIMEOUT = 2000000      # ffprobe读写IO超时(微秒) 2秒
 SUCCESS_CODES = {200, 201, 202, 206}
-MAX_SPEED_TEST_RUN_TIME = 5 * 3600 + 30 * 60   # 5小时30秒 测速最大时长，超时善终退出
+MAX_SPEED_TEST_RUN_TIME = 5 * 3600 + 30 * 60   # 5小时30分，测速最大时长，超时善终退出
 SKIP_AUDIO_ONLY_STREAM = False
 
 
@@ -64,6 +63,7 @@ async def ffprobe_check(url: str, sem: asyncio.Semaphore) -> Tuple[bool, str, st
             if proc.returncode != 0:
                 err_text = stderr.decode("utf-8", errors="ignore")[:250]
                 return False, "", "", "", "", f"ffprobe:fail:{err_text}"
+
             data = stdout.decode("utf-8").splitlines()
             if len(data) >= 4:
                 w = data[0].strip()
@@ -90,13 +90,16 @@ async def test_single(session: aiohttp.ClientSession, http_sem: asyncio.Semaphor
         line = clean_text(line)
         if not line or "," not in line:
             return None, line, "bad_line_format:missing_comma"
+
         name, url_part = line.split(",", maxsplit=1)
         url = url_part.split("#")[0].strip()
         source_src = url_part.split("#")[1].strip() if "#" in url_part else ""
+
         dom = get_domain(url)
         if dom not in domain_sem_map:
             domain_sem_map[dom] = asyncio.Semaphore(DOMAIN_MAX_CONCURRENCY)
         dom_sem = domain_sem_map[dom]
+
         async with http_sem, dom_sem:
             st = time.time()
             headers = {
@@ -115,9 +118,11 @@ async def test_single(session: aiohttp.ClientSession, http_sem: asyncio.Semaphor
                 return None, line, "http_timeout"
             except Exception as e:
                 return None, line, f"http_unknown_exception:{type(e).__name__}|{str(e)}"
+
             delay_ms = round((time.time() - st) * 1000)
             ff_ok, w, h, codec, br, ff_err = await ffprobe_check(url, ff_sem)
             valid = http_ok and ff_ok
+
             res = {
                 "name": name,
                 "url": url,
@@ -143,8 +148,10 @@ async def main():
     if not os.path.exists(input_path):
         print("[WARN‑STEP4]初处理.txt不存在，退出测速")
         return
+
     with open(input_path, "r", encoding="utf-8") as f:
         lines = [l for l in f if clean_text(l)]
+
     print(f"[STEP4‑DEBUG]待测速 {len(lines)} 条")
     speed_start = time.time()
     time_need_stop = speed_start + MAX_SPEED_TEST_RUN_TIME
@@ -153,12 +160,13 @@ async def main():
     ff_sem = asyncio.Semaphore(CONCURRENCY_FFPROBE)
     domain_sem = dict()
 
+    # 已移除 family=4，不再强制限定IP协议族
     connector = aiohttp.TCPConnector(
         limit=CONCURRENCY_HTTP,
         ttl_dns_cache=300,
-        force_close=False,
-        family=4   # 强制IPv4，屏蔽IPv6报错刷屏
+        force_close=False
     )
+
     valid_tmp = os.path.join(SOURCES_DIR, ".valid.tmp")
     fail_tmp = os.path.join(SOURCES_DIR, ".fail.tmp")
     results = []
