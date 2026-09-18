@@ -203,7 +203,7 @@ async def main():
                     print(f"[STEP4‑PROGRESS]已测速 {completed}/{len(lines)}，有效{v_cnt}，失败{len(results)-v_cnt} sample_err={err}")
 
                 # 调试排查时取消下面注释，打印每条错误
-                 print(f"[STEP4‑DETAIL] line={orig_line[:80]} err={err}")
+                print(f"[STEP4‑DETAIL] line={orig_line[:80]} err={err}")
 
         finally:
             fv.close()
