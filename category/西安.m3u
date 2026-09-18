@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 group-title="西安",西安新闻
+http://112.46.105.20:8009/hls/28/index.m3u8
+#EXTINF:-1 group-title="西安",西安都市
+http://112.46.105.20:8009/hls/29/index.m3u8

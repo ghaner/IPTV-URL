@@ -1,0 +1,87 @@
+#EXTM3U
+#EXTINF:-1 group-title="少儿",CCTV14少儿
+http://173.208.212.130:8181/1080p/cctv14.m3u8
+#EXTINF:-1 group-title="少儿",CCTV14少儿
+http://192.151.150.154/live/cctv14hd.m3u8
+#EXTINF:-1 group-title="少儿",CCTV14少儿
+http://bztv.tvbus.cc:8081/cdnlive/cctv14.m3u8
+#EXTINF:-1 group-title="少儿",CCTV14少儿
+http://173.208.212.130:8181/720p/cctv14.m3u8
+#EXTINF:-1 group-title="少儿",CCTV14少儿
+http://107.150.60.122/live/cctv14hd.m3u8
+#EXTINF:-1 group-title="少儿",内蒙少儿
+http://play1-qk.nmtv.cn/live/2318general.m3u8
+#EXTINF:-1 group-title="少儿",北京卡酷少儿
+http://204.12.221.218:8181/3m1080p/btvkk.m3u8
+#EXTINF:-1 group-title="少儿",卡酷少儿
+http://114.254.38.234:8888/rtp/239.3.1.189:8000
+#EXTINF:-1 group-title="少儿",卡酷少儿
+http://192.151.150.154/live/btvkk.m3u8
+#EXTINF:-1 group-title="少儿",卡酷少儿
+http://198.204.228.26/live/btvkk.m3u8
+#EXTINF:-1 group-title="少儿",卡酷少儿
+http://38.75.136.137:98/gslb/dsdqpub/btvkk.m3u8?auth=testpub
+#EXTINF:-1 group-title="少儿",卡酷少儿
+http://218.13.170.98:9901/tsfile/live/1021_1.m3u8
+#EXTINF:-1 group-title="少儿",卡酷少儿
+http://107.150.60.122/live/btvkk.m3u8
+#EXTINF:-1 group-title="少儿",广东少儿
+http://jellyfin.cyruslee.top:8888/udp/239.77.0.250:5146
+#EXTINF:-1 group-title="少儿",广东少儿
+http://hongzhijiaoyu.net:8188/udp/239.77.0.250:5146
+#EXTINF:-1 group-title="少儿",广东少儿
+http://183.234.143.5:85/tsfile/live/1001_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 group-title="少儿",广东少儿
+http://www.3344.uk:8888/udp/239.77.0.250:5146
+#EXTINF:-1 group-title="少儿",广东少儿
+http://192.151.150.154/live/gdtvs5.m3u8
+#EXTINF:-1 group-title="少儿",广东少儿
+http://198.204.228.26/live/gdtvs5.m3u8
+#EXTINF:-1 group-title="少儿",广东少儿
+http://107.150.60.122/live/gdtvs5.m3u8
+#EXTINF:-1 group-title="少儿",广东少儿
+http://120.238.85.131:9901/tsfile/live/1018_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 group-title="少儿",广东少儿
+http://yanshifen.top:8889/udp/239.77.0.250:5146
+#EXTINF:-1 group-title="少儿",广东少儿
+http://www.yahao.host:4022/udp/239.77.0.250:5146
+#EXTINF:-1 group-title="少儿",广东少儿
+http://lbyjlt.vv5678.cn:8880/udp/239.77.0.250:5146
+#EXTINF:-1 group-title="少儿",广东少儿
+http://38.75.136.137:98/gslb/dsdqpub/gdtvs5.m3u8?auth=testpub
+#EXTINF:-1 group-title="少儿",江西少儿
+http://107.150.60.122/live/jxtv6.m3u8
+#EXTINF:-1 group-title="少儿",江西少儿
+http://198.204.228.26/live/jxtv6.m3u8
+#EXTINF:-1 group-title="少儿",江西少儿
+http://192.151.150.154/live/jxtv6.m3u8
+#EXTINF:-1 group-title="少儿",河北少儿科教
+http://tv.pull.hebtv.com/jishi/shaoerkejiao.m3u8?t=1893427200&k=d4a455b288ebbc0f53903f4750372b0f
+#EXTINF:-1 group-title="少儿",浙江少儿
+https://ali-xwl.cztv.com/live/channel081080Pnew.m3u8
+#EXTINF:-1 group-title="少儿",浙江少儿
+https://ali-xwl.cztv.com/live/channel08720Pnew.m3u8
+#EXTINF:-1 group-title="少儿",浙江少儿
+https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
+#EXTINF:-1 group-title="少儿",浙江少儿
+http://ali-xwl.cztv.com/live/channel081080Plxw.m3u8
+#EXTINF:-1 group-title="少儿",浙江少儿
+http://ali-xwl.cztv.com/live/channel08720Plxw.m3u8
+#EXTINF:-1 group-title="少儿",浙江少儿
+http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
+#EXTINF:-1 group-title="少儿",浙江少儿
+http://ali-vl.cztv.com/channels/lantian/channel008/360p.m3u8
+#EXTINF:-1 group-title="少儿",浙江少儿
+http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?fbl=
+#EXTINF:-1 group-title="少儿",深圳少儿
+http://120.233.73.4:19901/tsfile/live/1035_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="少儿",福州少儿
+http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
+#EXTINF:-1 group-title="少儿",重庆少儿
+http://38.75.136.137:98/gslb/dsdqpub/cqse.m3u8?auth=testpub
+#EXTINF:-1 group-title="少儿",韩国EBS少儿
+http://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8
+#EXTINF:-1 group-title="少儿",黑龙江少儿
+http://112.99.195.122:65000/tsfile/live/1030_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="少儿",黑龙江少儿
+https://ls.qingting.fm/live/4972/64k.m3u8
