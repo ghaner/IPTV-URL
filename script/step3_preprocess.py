@@ -1,4 +1,4 @@
-# -*- coding: utf‑8 -*-
+# -*- coding: utf-8 -*-
 """Step3：汇总.txt → URL标准化、去重、双黑名单过滤 → sources/初处理.txt
 方案A：磁盘黑名单原样保留用户手动录入；内存黑名单使用激进标准化用于匹配；
 【方案1 函数拆分】
@@ -99,7 +99,7 @@ def load_perm_blacklist() -> set:
     """
     data = set()
     if os.path.exists(PERM_BLACKLIST_PATH):
-        with open(PERM_BLACKLIST_PATH, "r", encoding="utf‑8") as f:
+        with open(PERM_BLACKLIST_PATH, "r", encoding="utf-8") as f:
             for line in f:
                 u = clean_text(line)
                 if u:
@@ -111,7 +111,7 @@ def load_perm_blacklist() -> set:
 
 def save_perm_blacklist(black_set: set):
     """脚本自动新增黑名单调用，写入的是黑名单激进标准化后的url"""
-    with open(PERM_BLACKLIST_PATH, "w", encoding="utf‑8") as f:
+    with open(PERM_BLACKLIST_PATH, "w", encoding="utf-8") as f:
         for u in sorted(black_set):
             f.write(u + "\n")
 
@@ -120,7 +120,7 @@ def load_temp_blacklist():
     result = {}
     if not os.path.exists(TEMP_BLACKLIST_PATH):
         return result
-    with open(TEMP_BLACKLIST_PATH, "r", encoding="utf‑8") as f:
+    with open(TEMP_BLACKLIST_PATH, "r", encoding="utf-8") as f:
         for line in f:
             line = clean_text(line)
             if not line:
@@ -146,7 +146,7 @@ def save_temp_blacklist(bl_dict):
         iso = info["enter_time"].isoformat()
         count = info["count"]
         lines.append(f"{url}|{iso}|{count}")
-    with open(TEMP_BLACKLIST_PATH, "w", encoding="utf‑8") as f:
+    with open(TEMP_BLACKLIST_PATH, "w", encoding="utf-8") as f:
         for l in lines:
             f.write(l + "\n")
 
@@ -165,8 +165,20 @@ def clean_expired_temp_blacklist(temp_bl):
 
 
 def main():
-    print("[STEP3‑PROGRESS] ======步骤3 汇总直播源初步处理开始======")
+    # 调试路径打印
+    print(f"[DEBUG] BASE_DIR={BASE_DIR}")
+    print(f"[DEBUG] SOURCES_DIR={SOURCES_DIR}")
+    print(f"[DEBUG] sources目录是否存在: {os.path.exists(SOURCES_DIR)}")
+
+    # 自动创建sources目录，解决目录缺失无法写出文件
+    if not os.path.exists(SOURCES_DIR):
+        os.makedirs(SOURCES_DIR)
+        print("[DEBUG] 已自动创建sources文件夹")
+
     merged_file = os.path.join(SOURCES_DIR, "汇总.txt")
+    print(f"[DEBUG] 汇总.txt路径={merged_file}，存在={os.path.exists(merged_file)}")
+
+    print("[STEP3‑PROGRESS] ======步骤3 汇总直播源初步处理开始======")
     if not os.path.exists(merged_file):
         print("[WARN‑STEP3]汇总.txt不存在，直接退出")
         return
@@ -183,7 +195,7 @@ def main():
     url_seen_save = set()   # 去重使用【保存版url】（真实访问url）
     output_lines = []
 
-    with open(merged_file, "r", encoding="utf‑8") as f:
+    with open(merged_file, "r", encoding="utf-8") as f:
         raw_lines = [clean_text(l) for l in f if clean_text(l)]
 
     print(f"[STEP3‑DEBUG]输入原始行数 {len(raw_lines)}")
@@ -223,13 +235,13 @@ def main():
         output_lines.append(f"{clean_text(name)},{save_url}{comment}")
 
     out_file = os.path.join(SOURCES_DIR, "初处理.txt")
-    with open(out_file, "w", encoding="utf‑8") as f:
+    with open(out_file, "w", encoding="utf-8") as f:
         f.write("\n".join(output_lines))
 
     print(f"[STEP3‑FILTER]永久黑名单过滤:{count_perm_filter}；临时黑名单过滤:{count_temp_filter}；重复url:{count_dup}；坏行丢弃:{count_bad}；输出初处理.txt {len(output_lines)}条")
 
     tmp_release = os.path.join(BASE_DIR, ".step3_released.tmp.json")
-    with open(tmp_release, "w", encoding="utf‑8") as f:
+    with open(tmp_release, "w", encoding="utf-8") as f:
         json.dump(list(released_url_set), f, ensure_ascii=False)
 
 

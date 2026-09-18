@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Step4：读取初处理.txt执行测速【修复全部valid=0版本】
-BUG修复：HTTP头key "User‑Agent"中文全角破折号 → 英文 User-Agent
+"""Step4：读取初处理.txt执行测速【最终修复版】
+修复清单：
+1. HTTP头User‑Agent中文全角横杠 → 英文User‑Agent
+2. ffprobe http ua参数使用 -http_user_agent（之前参数写错导致UA不生效，大量no_video_stream）
+3. 删除预读取2048字节，仅校验http状态码
+4. ffprobe捕获stderr输出，原始错误存入err字段
 """
 import asyncio
 import aiohttp
@@ -15,13 +19,12 @@ SOURCES_DIR = os.path.join(BASE_DIR, "sources")
 
 BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 
-# 参数
+# ========== 参数调优 ==========
 CONCURRENCY_HTTP = 3
 CONCURRENCY_FFPROBE = 2
 TIMEOUT = 12
 SUCCESS_CODES = {200, 201, 202, 206}
 MAX_SPEED_TEST_RUN_TIME = 5 * 3600 + 30 * 60
-HTTP_READ_BYTES = 2048
 SKIP_AUDIO_ONLY_STREAM = False
 
 
@@ -42,33 +45,31 @@ async def ffprobe_check(url: str, sem: asyncio.Semaphore) -> Tuple[bool, str, st
         async with sem:
             proc = await asyncio.create_subprocess_exec(
                 "ffprobe",
-                "-user_agent", BROWSER_UA,
-                "-timeout", "3000000", "-stimeout", "3000000",
-                "-v", "error", "-select_streams", "v:0",
+                "-http_user_agent", BROWSER_UA,
+                "-timeout", "3000000",
+                "-stimeout", "3000000",
+                "-v", "error",
+                "-select_streams", "v:0",
                 "-show_entries", "stream=width,height,codec_name,bit_rate",
                 "-of", "default=noprint_wrappers=1:nokey=1",
                 url,
                 stdout=asyncio.subprocess.PIPE,
                 stderr=asyncio.subprocess.PIPE
             )
-            try:
-                stdout, stderr = await asyncio.wait_for(proc.communicate(), timeout=4.0)
-                data = stdout.decode().splitlines()
-                w = data[0] if len(data) > 0 else ""
-                h = data[1] if len(data) > 1 else ""
-                codec = data[2] if len(data) > 2 else ""
-                br = data[3] if len(data) > 3 else "0"
-                bitrate = str(int(br) // 1000) if br.isdigit() else "0"
-                has_video = bool(w and h and w != "N/A" and h != "N/A")
+            stdout, stderr = await proc.communicate()
+            if proc.returncode != 0:
+                err_text = stderr.decode("utf-8", errors="ignore")[:250]
+                return False, "", "", "", "", f"ffprobe:fail:{err_text}"
 
-                if SKIP_AUDIO_ONLY_STREAM and not has_video:
-                    return False, "", "", "", "", "ffprobe:skip_audio_only_stream"
-                if not has_video:
-                    return False, w, h, codec, bitrate, "ffprobe:no_video_stream"
-                return True, w, h, codec, bitrate, ""
-
-            except asyncio.TimeoutError:
-                return False, "", "", "", "", "ffprobe:subprocess_timeout"
+            data = stdout.decode("utf-8").splitlines()
+            if len(data) >= 4:
+                w = data[0].strip()
+                h = data[1].strip()
+                codec = data[2].strip()
+                br = data[3].strip()
+                return True, w, h, codec, br, ""
+            else:
+                return False, "", "", "", "", "ffprobe:no_video_stream"
     except Exception as e:
         return False, "", "", "", "", f"ffprobe:exception:{str(e)}"
     finally:
@@ -86,18 +87,18 @@ async def test_single(session: aiohttp.ClientSession, http_sem: asyncio.Semaphor
         line = clean_text(line)
         if not line or "," not in line:
             return None, line, "bad_line_format:missing_comma"
-        name, url_part = line.split(",", 1)
+
+        name, url_part = line.split(",", maxsplit=1)
         url = url_part.split("#")[0].strip()
-        source_src = url_part.split("#")[1] if "#" in url_part else ""
+        source_src = url_part.split("#")[1].strip() if "#" in url_part else ""
 
         dom = get_domain(url)
         if dom not in domain_sem_map:
             domain_sem_map[dom] = asyncio.Semaphore(3)
+        dom_sem = domain_sem_map[dom]
 
-        async with http_sem, domain_sem_map[dom]:
+        async with http_sem, dom_sem:
             st = time.time()
-            http_ok = False
-            # ========= 修复关键BUG：全部英文横杠 User-Agent =========
             headers = {
                 "User-Agent": BROWSER_UA,
                 "Referer": "https://localhost/"
@@ -105,7 +106,6 @@ async def test_single(session: aiohttp.ClientSession, http_sem: asyncio.Semaphor
             try:
                 async with session.get(url, headers=headers,
                                        timeout=aiohttp.ClientTimeout(total=TIMEOUT)) as resp:
-                    await resp.content.read(HTTP_READ_BYTES)
                     http_ok = resp.status in SUCCESS_CODES
                     if not http_ok:
                         return None, line, f"http:status_code_{resp.status}"
@@ -116,25 +116,23 @@ async def test_single(session: aiohttp.ClientSession, http_sem: asyncio.Semaphor
             except Exception as e:
                 return None, line, f"http_unknown_exception:{type(e).__name__}|{str(e)}"
 
-            delay = round((time.time() - st) * 1000)
+            delay_ms = round((time.time() - st) * 1000)
             ff_ok, w, h, codec, br, ff_err = await ffprobe_check(url, ff_sem)
             valid = http_ok and ff_ok
-            err = ff_err
 
             res = {
                 "name": name,
                 "url": url,
-                "delay": delay,
+                "delay": delay_ms,
                 "width": w,
                 "height": h,
                 "codec": codec,
                 "bitrate": br,
                 "valid": valid,
                 "source": source_src,
-                "err": err
+                "err": ff_err
             }
-            return res, line, err
-
+            return res, line, ff_err
     except asyncio.CancelledError:
         raise
     except Exception as e:
@@ -189,7 +187,7 @@ async def main():
                     v_cnt = sum(1 for r in results if r["valid"])
                     print(f"[STEP4‑PROGRESS]已测速 {completed}/{len(lines)}，有效{v_cnt}，失败{len(results)-v_cnt} sample_err={err}")
 
-                # 调试时打开，注意缩进
+                # 调试排查取消下面注释，注意缩进
                 # print(f"[STEP4‑DETAIL] line={orig_line[:80]} err={err}")
 
         finally:
