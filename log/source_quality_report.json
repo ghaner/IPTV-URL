@@ -1,118 +1,6 @@
 [
   {
-    "source_url": ".m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://23.237.228.134/live5/CCTV2.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://live.cms.anhuinews.com/video/s10003-lbtv/index.m3u8",
-    "total": 1,
-    "valid": 1,
-    "failed": 0,
-    "failure_rate": 0.0,
-    "available_rate": 1.0
-  },
-  {
-    "source_url": "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://23.237.228.134/live5/CCTV5.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://23.237.228.134/live3/CCTV15.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://111.61.236.247:9081/hls/52/index.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://23.237.228.134/live3/CCTV17.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
     "source_url": "http://qjrhc.jydjd.top:2911/udp/224.1.100.146:11111",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv16",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://stream.thmz.com/wxtv3/sd/live.m3u8?_upt=978cd8731706199708",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "https://www.goodiptv.club/yy/1382736888",
-    "total": 2,
-    "valid": 2,
-    "failed": 0,
-    "failure_rate": 0.0,
-    "available_rate": 1.0
-  },
-  {
-    "source_url": "https://raw.githubusercontent.com/yanghanhanyingshi/iptv/refs/heads/main/live.m3u",
-    "total": 661,
-    "valid": 408,
-    "failed": 253,
-    "failure_rate": 0.3828,
-    "available_rate": 0.6172
-  },
-  {
-    "source_url": "http://mtw.so/69HNaP",
-    "total": 2,
-    "valid": 1,
-    "failed": 1,
-    "failure_rate": 0.5,
-    "available_rate": 0.5
-  },
-  {
-    "source_url": "http://stream.thmz.com/wxtv5/playlist.m3u8?_upt=10155d141706166867",
     "total": 1,
     "valid": 0,
     "failed": 1,
@@ -128,55 +16,23 @@
     "available_rate": 0.0
   },
   {
-    "source_url": "http://23.237.228.134/live5/CCTV8.m3u8",
-    "total": 1,
-    "valid": 0,
+    "source_url": "https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_china.m3u8",
+    "total": 2,
+    "valid": 1,
     "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://hbfc.chinashadt.com:2036/live/1003.stream/playlist.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://23.237.228.134/live5/CCTV9.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live.m3u",
-    "total": 1548,
-    "valid": 1058,
-    "failed": 490,
-    "failure_rate": 0.3165,
-    "available_rate": 0.6835
-  },
-  {
-    "source_url": "https://liveout.xntv.tv/a65jur/96iln2.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
+    "failure_rate": 0.5,
+    "available_rate": 0.5
   },
   {
     "source_url": "http://23.237.228.134/live5/CCTV7.m3u8",
     "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
   },
   {
-    "source_url": "http://nn.7x9d.cn/地方台8563/海南.php?id=ssws",
+    "source_url": "http://111.61.236.247:9081/hls/52/index.m3u8",
     "total": 1,
     "valid": 0,
     "failed": 1,
@@ -184,7 +40,7 @@
     "available_rate": 0.0
   },
   {
-    "source_url": "http://go.bkpcp.top/mg/cctv4o",
+    "source_url": ".m3u8",
     "total": 1,
     "valid": 0,
     "failed": 1,
@@ -200,7 +56,7 @@
     "available_rate": 0.0
   },
   {
-    "source_url": "https://live.chinacert.cftest5.cn/mg/?id=609006476",
+    "source_url": "http://stream.thmz.com/wxtv5/playlist.m3u8?_upt=10155d141706166867",
     "total": 1,
     "valid": 0,
     "failed": 1,
@@ -208,20 +64,12 @@
     "available_rate": 0.0
   },
   {
-    "source_url": "http://23.237.228.134/live3/CCTV12.m3u8",
+    "source_url": "http://23.237.228.134/live5/CCTV10.m3u8",
     "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "https://raw.githubusercontent.com/ggoplaydd-bot/tvbox-live/refs/heads/main/live.txt",
-    "total": 1193,
-    "valid": 470,
-    "failed": 723,
-    "failure_rate": 0.606,
-    "available_rate": 0.394
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
   },
   {
     "source_url": "http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8",
@@ -232,55 +80,7 @@
     "available_rate": 0.0
   },
   {
-    "source_url": "migu5://611318244",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://23.237.228.134/live5/CCTV10.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live_platforms.m3u",
-    "total": 1952,
-    "valid": 1795,
-    "failed": 157,
-    "failure_rate": 0.0804,
-    "available_rate": 0.9196
-  },
-  {
-    "source_url": "https://tencentplay.gztv.com/live/yingshi.m3u8?txSecret=7e9bddad7c8911626ed1d2c09fc605d9&txTime=18d00acf487",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_china.m3u8",
-    "total": 2,
-    "valid": 1,
-    "failed": 1,
-    "failure_rate": 0.5,
-    "available_rate": 0.5
-  },
-  {
-    "source_url": "http://23.237.228.134/live3/CCTV14.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://tv.pull.hebtv.com/jishi/dushipindao.m3u8?t=2510710360&k=4380da13735a230c080ce8ff404033af",
+    "source_url": "http://nn.7x9d.cn/地方台8563/海南.php?id=ssws",
     "total": 1,
     "valid": 0,
     "failed": 1,
@@ -296,9 +96,33 @@
     "available_rate": 0.0
   },
   {
-    "source_url": "https://www.goodiptv.club/yy/1354926650",
-    "total": 2,
-    "valid": 2,
+    "source_url": "http://live.cms.anhuinews.com/video/s10003-lbtv/index.m3u8",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/David1016/live-merged/refs/heads/main/LIVE-merged.m3u",
+    "total": 353,
+    "valid": 101,
+    "failed": 252,
+    "failure_rate": 0.7139,
+    "available_rate": 0.2861
+  },
+  {
+    "source_url": "http://go.bkpcp.top/mg/cctv4o",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "http://23.237.228.134/live5/CCTV5p.m3u8",
+    "total": 1,
+    "valid": 1,
     "failed": 0,
     "failure_rate": 0.0,
     "available_rate": 1.0
@@ -306,37 +130,13 @@
   {
     "source_url": "http://23.237.228.134/live5/CCTV6.m3u8",
     "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
   },
   {
-    "source_url": "https://raw.githubusercontent.com/David1016/live-merged/refs/heads/main/LIVE-merged.m3u",
-    "total": 566,
-    "valid": 376,
-    "failed": 190,
-    "failure_rate": 0.3357,
-    "available_rate": 0.6643
-  },
-  {
-    "source_url": "https://raw.githubusercontent.com/18302983787/iptv-api-gmh/refs/heads/master/output/result.m3u",
-    "total": 1306,
-    "valid": 119,
-    "failed": 1187,
-    "failure_rate": 0.9089,
-    "available_rate": 0.0911
-  },
-  {
-    "source_url": "https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u",
-    "total": 499,
-    "valid": 297,
-    "failed": 202,
-    "failure_rate": 0.4048,
-    "available_rate": 0.5952
-  },
-  {
-    "source_url": "http://23.237.228.134/live5/CCTV1.m3u8",
+    "source_url": ",http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty",
     "total": 1,
     "valid": 0,
     "failed": 1,
@@ -344,7 +144,63 @@
     "available_rate": 0.0
   },
   {
-    "source_url": "http://23.237.228.134/live5/CCTV3.m3u8",
+    "source_url": "http://mtw.so/69HNaP",
+    "total": 2,
+    "valid": 1,
+    "failed": 1,
+    "failure_rate": 0.5,
+    "available_rate": 0.5
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/ggoplaydd-bot/tvbox-live/refs/heads/main/live.txt",
+    "total": 1197,
+    "valid": 566,
+    "failed": 631,
+    "failure_rate": 0.5272,
+    "available_rate": 0.4728
+  },
+  {
+    "source_url": "http://23.237.228.134/live5/CCTV2.m3u8",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv16",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u",
+    "total": 117,
+    "valid": 44,
+    "failed": 73,
+    "failure_rate": 0.6239,
+    "available_rate": 0.3761
+  },
+  {
+    "source_url": "http://23.237.228.134/live5/CCTV5.m3u8",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "http://23.237.228.134/live3/CCTV12.m3u8",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "http://tv.pull.hebtv.com/jishi/dushipindao.m3u8?t=2510710360&k=4380da13735a230c080ce8ff404033af",
     "total": 1,
     "valid": 0,
     "failed": 1,
@@ -352,31 +208,7 @@
     "available_rate": 0.0
   },
   {
-    "source_url": "http://23.237.228.134/live5/CCTV5p.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "https://jwplay.hebyun.com.cn/live/xttv/1500k/tzwj_video.m3u8",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://j.s.bkpcp.top/jj/cgtne",
-    "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
-  },
-  {
-    "source_url": "http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8",
+    "source_url": "http://hbfc.chinashadt.com:2036/live/1003.stream/playlist.m3u8",
     "total": 1,
     "valid": 0,
     "failed": 1,
@@ -385,19 +217,35 @@
   },
   {
     "source_url": "https://raw.githubusercontent.com/best-fan/iptv-sources/refs/heads/main/cn_all_status.m3u8",
-    "total": 121,
-    "valid": 38,
-    "failed": 83,
-    "failure_rate": 0.686,
-    "available_rate": 0.314
+    "total": 115,
+    "valid": 37,
+    "failed": 78,
+    "failure_rate": 0.6783,
+    "available_rate": 0.3217
   },
   {
-    "source_url": "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u",
-    "total": 132,
-    "valid": 46,
-    "failed": 86,
-    "failure_rate": 0.6515,
-    "available_rate": 0.3485
+    "source_url": "migu5://611318244",
+    "total": 1,
+    "valid": 0,
+    "failed": 1,
+    "failure_rate": 1.0,
+    "available_rate": 0.0
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live.m3u",
+    "total": 1812,
+    "valid": 1318,
+    "failed": 494,
+    "failure_rate": 0.2726,
+    "available_rate": 0.7274
+  },
+  {
+    "source_url": "http://23.237.228.134/live5/CCTV9.m3u8",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
   },
   {
     "source_url": "https://mytv.cdn.loc.cc/o12.php?id=fct",
@@ -408,7 +256,15 @@
     "available_rate": 1.0
   },
   {
-    "source_url": "http://stream.thmz.com/wxtv1/playlist.m3u8?_upt=156143371706166361",
+    "source_url": "https://www.goodiptv.club/yy/1382736888",
+    "total": 3,
+    "valid": 2,
+    "failed": 1,
+    "failure_rate": 0.3333,
+    "available_rate": 0.6667
+  },
+  {
+    "source_url": "http://stream.thmz.com/wxtv3/sd/live.m3u8?_upt=978cd8731706199708",
     "total": 1,
     "valid": 0,
     "failed": 1,
@@ -418,33 +274,177 @@
   {
     "source_url": "http://23.237.228.134/live3/CCTV11.m3u8",
     "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "http://23.237.228.134/live5/CCTV1.m3u8",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed",
+    "total": 1,
     "valid": 0,
     "failed": 1,
     "failure_rate": 1.0,
     "available_rate": 0.0
+  },
+  {
+    "source_url": "http://23.237.228.134/live3/CCTV17.m3u8",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/Supprise0901/TVBox_live/refs/heads/main/live.txt",
+    "total": 192,
+    "valid": 40,
+    "failed": 152,
+    "failure_rate": 0.7917,
+    "available_rate": 0.2083
+  },
+  {
+    "source_url": "http://stream.thmz.com/wxtv1/playlist.m3u8?_upt=156143371706166361",
+    "total": 1,
+    "valid": 0,
+    "failed": 1,
+    "failure_rate": 1.0,
+    "available_rate": 0.0
+  },
+  {
+    "source_url": "http://j.s.bkpcp.top/jj/cgtne",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "http://23.237.228.134/live5/CCTV3.m3u8",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/yanghanhanyingshi/iptv/refs/heads/main/live.m3u",
+    "total": 652,
+    "valid": 419,
+    "failed": 233,
+    "failure_rate": 0.3574,
+    "available_rate": 0.6426
+  },
+  {
+    "source_url": "https://tencentplay.gztv.com/live/yingshi.m3u8?txSecret=7e9bddad7c8911626ed1d2c09fc605d9&txTime=18d00acf487",
+    "total": 1,
+    "valid": 0,
+    "failed": 1,
+    "failure_rate": 1.0,
+    "available_rate": 0.0
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/18302983787/iptv-api-gmh/refs/heads/master/output/result.m3u",
+    "total": 1310,
+    "valid": 133,
+    "failed": 1177,
+    "failure_rate": 0.8985,
+    "available_rate": 0.1015
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u",
+    "total": 501,
+    "valid": 303,
+    "failed": 198,
+    "failure_rate": 0.3952,
+    "available_rate": 0.6048
+  },
+  {
+    "source_url": "http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8",
+    "total": 1,
+    "valid": 0,
+    "failed": 1,
+    "failure_rate": 1.0,
+    "available_rate": 0.0
+  },
+  {
+    "source_url": "http://23.237.228.134/live5/CCTV8.m3u8",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
   },
   {
     "source_url": "http://j.s.bkpcp.top/jj/cgtna",
     "total": 1,
-    "valid": 0,
-    "failed": 1,
-    "failure_rate": 1.0,
-    "available_rate": 0.0
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
   },
   {
-    "source_url": "https://raw.githubusercontent.com/Supprise0901/TVBox_live/refs/heads/main/live.txt",
-    "total": 169,
-    "valid": 35,
-    "failed": 134,
-    "failure_rate": 0.7929,
-    "available_rate": 0.2071
+    "source_url": "https://live.chinacert.cftest5.cn/mg/?id=609006476",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
   },
   {
-    "source_url": ",http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty",
+    "source_url": "https://liveout.xntv.tv/a65jur/96iln2.m3u8",
     "total": 1,
     "valid": 0,
     "failed": 1,
     "failure_rate": 1.0,
     "available_rate": 0.0
+  },
+  {
+    "source_url": "https://www.goodiptv.club/yy/1354926650",
+    "total": 3,
+    "valid": 2,
+    "failed": 1,
+    "failure_rate": 0.3333,
+    "available_rate": 0.6667
+  },
+  {
+    "source_url": "https://jwplay.hebyun.com.cn/live/xttv/1500k/tzwj_video.m3u8",
+    "total": 1,
+    "valid": 0,
+    "failed": 1,
+    "failure_rate": 1.0,
+    "available_rate": 0.0
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live_platforms.m3u",
+    "total": 3028,
+    "valid": 1662,
+    "failed": 1366,
+    "failure_rate": 0.4511,
+    "available_rate": 0.5489
+  },
+  {
+    "source_url": "http://23.237.228.134/live3/CCTV14.m3u8",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
+  },
+  {
+    "source_url": "http://23.237.228.134/live3/CCTV15.m3u8",
+    "total": 1,
+    "valid": 1,
+    "failed": 0,
+    "failure_rate": 0.0,
+    "available_rate": 1.0
   }
 ]

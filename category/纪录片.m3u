@@ -1,9 +1,9 @@
 #EXTM3U
-#EXTINF:-1,tvg-name="最后的狮子-探险纪录片",最后的狮子-探险纪录片
+#EXTINF:-1,group-title="纪录片",最后的狮子-探险纪录片
 https://www.goodiptv.club/yy/1382735577
-#EXTINF:-1,tvg-name="正经纪录片",正经纪录片
+#EXTINF:-1,group-title="纪录片",正经纪录片
 https://live.ottiptv.cc/huya/23860049
-#EXTINF:-1,tvg-name="王朝-自然-纪录片",王朝-自然-纪录片
+#EXTINF:-1,group-title="纪录片",王朝-自然-纪录片
 https://www.goodiptv.club/yy/1354930927
-#EXTINF:-1,tvg-name="纪录片之家字幕组",纪录片之家字幕组
+#EXTINF:-1,group-title="纪录片",纪录片之家字幕组
 https://live.ottiptv.cc/douyu/8834003

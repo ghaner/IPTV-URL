@@ -1,3 +1,3 @@
 #EXTM3U
-#EXTINF:-1,tvg-name="七台河新闻综合",七台河新闻综合
+#EXTINF:-1,group-title="七台河",七台河新闻综合
 http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8
