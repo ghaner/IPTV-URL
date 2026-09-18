@@ -7,6 +7,5 @@ TVBS新闻台,http://61.221.215.25:8800/hls/9/index.m3u8
 民视台湾台,http://74.91.26.218:82/live/ftvtw.m3u8
 民视新闻台,http://38.64.72.148/hls/modn/list/4012/playlist.m3u8
 民视新闻台,http://74.91.26.218:82/live/ftvnews.m3u8
-纬来戏剧台,http://31.43.191.125:8080/vip7201770826573/415c945b71e8/34854
 纬来日本台,http://31.43.191.125:8080/vip7201770826573/415c945b71e8/34853
 纬来电影台,http://free.cnlive.club/channel/581b458b.m3u8
