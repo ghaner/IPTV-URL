@@ -1,5 +1,0 @@
-#EXTM3U
-#EXTINF:-1,group-title="福州",福州少儿
-http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
-#EXTINF:-1,group-title="福州",福州生活
-http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8
