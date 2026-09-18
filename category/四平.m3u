@@ -1,7 +1,0 @@
-#EXTM3U
-#EXTINF:-1,group-title="四平",四平新闻综合
-https://stream2.jlntv.cn/sptv/sd/live.m3u8
-#EXTINF:-1,group-title="四平",四平综合
-http://stream2.jlntv.cn/sptv/sd/live.m3u8
-#EXTINF:-1,group-title="四平",四平综合
-http://evfh-www.plus.jlntv.cn/siping/folder134/folder158
