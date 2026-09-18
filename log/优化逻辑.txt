@@ -1,13 +1,8 @@
-update-iptv #11
-
-
-
-
-
-
-
-
-  
+update-iptv #29 
+bug
+步骤5
+源质量报告输出 非下载源 
+[STEP5‑END]源质量报告输出log/source_quality_report.json；失效率TOP3:['https://live.metshop.top/yy/1382736808', 'http://111.61.236.247:9081/hls/52/index.m3u8', 'https://live.metshop.top/yy/1354930891']
   
  
   

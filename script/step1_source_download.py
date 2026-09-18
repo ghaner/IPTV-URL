@@ -74,7 +74,7 @@ async def step1_download():
                     print(f"[STEP1‑DEBUG] {source_url} 解析得到 {len(result_list)} 条源")
                     # 转换为原版格式：名称,url #来源链接
                     for item in result_list:
-                        line = f"{item['name']},{item['url']} #{source_url}"
+                        line = f"{item['name']},{item['url']}#{source_url}"
                         text_lines.append(line)
 
             except Exception as e:
