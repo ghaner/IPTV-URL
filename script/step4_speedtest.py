@@ -9,6 +9,7 @@
 6. 修复CancelledError导致任务丢失，保证待测总数 ≈ 有效+失败
 7.【新增独立模块】测速失败原因统计模块，带配置开关，关闭不影响主逻辑
 无额外私自增加逻辑，移除 family=4
+修复：解析溯源注释，仅识别 ' #'（空格+#）作为注释分隔，避免url内部#被误切割
 """
 import asyncio
 import aiohttp
@@ -18,14 +19,11 @@ import os
 from collections import Counter
 from typing import Tuple
 from urllib.parse import urlparse
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SOURCES_DIR = os.path.join(BASE_DIR, "sources")
 LOG_DIR = os.path.join(BASE_DIR, "log")
 os.makedirs(LOG_DIR, exist_ok=True)
-
 BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
-
 # ========== 【提速调参区】 ==========
 CONCURRENCY_HTTP = 8
 CONCURRENCY_FFPROBE = 6
@@ -35,20 +33,17 @@ FF_RW_TIMEOUT = 2000000      # ffprobe读写IO超时(微秒) 2秒
 SUCCESS_CODES = {200, 201, 202, 206}
 MAX_SPEED_TEST_RUN_TIME = 5 * 3600 + 30 * 60   # 5小时30分，测速最大时长，超时善终退出
 SKIP_AUDIO_ONLY_STREAM = False
-
 # ==========【独立模块开关：测速失败原因统计】 ==========
 ENABLE_FAIL_REASON_STAT = True   # True开启；False关闭该模块，完全不影响其他业务
 
 def clean_text(s):
     return s.strip() if s else ""
 
-
 def get_domain(url: str) -> str:
     try:
         return urlparse(url).netloc or "unknown"
     except Exception:
         return "unknown"
-
 
 async def ffprobe_check(url: str, sem: asyncio.Semaphore) -> Tuple[bool, str, str, str, str, str]:
     proc = None
@@ -70,7 +65,6 @@ async def ffprobe_check(url: str, sem: asyncio.Semaphore) -> Tuple[bool, str, st
             if proc.returncode != 0:
                 err_text = stderr.decode("utf-8", errors="ignore")[:250]
                 return False, "", "", "", "", f"ffprobe:fail:{err_text}"
-
             data = stdout.decode("utf-8").splitlines()
             if len(data) >= 4:
                 w = data[0].strip()
@@ -90,7 +84,6 @@ async def ffprobe_check(url: str, sem: asyncio.Semaphore) -> Tuple[bool, str, st
             except Exception:
                 pass
 
-
 async def test_single(session: aiohttp.ClientSession, http_sem: asyncio.Semaphore, domain_sem_map: dict,
                       ff_sem: asyncio.Semaphore, line: str):
     try:
@@ -98,14 +91,19 @@ async def test_single(session: aiohttp.ClientSession, http_sem: asyncio.Semaphor
         if not line or "," not in line:
             return None, line, "bad_line_format:missing_comma"
         name, url_part = line.split(",", maxsplit=1)
-        url = url_part.split("#")[0].strip()
-        source_src = url_part.split("#")[1].strip() if "#" in url_part else ""
-
+        # ========= 修改：仅识别 ' #'空格+#作为溯源注释分隔 =========
+        if ' #' in url_part:
+            url, source_src = url_part.split(' #', maxsplit=1)
+            url = url.strip()
+            source_src = source_src.strip()
+        else:
+            url = url_part.strip()
+            source_src = ""
+        # ========================================================
         dom = get_domain(url)
         if dom not in domain_sem_map:
             domain_sem_map[dom] = asyncio.Semaphore(DOMAIN_MAX_CONCURRENCY)
         dom_sem = domain_sem_map[dom]
-
         async with http_sem, dom_sem:
             st = time.time()
             headers = {
@@ -124,11 +122,9 @@ async def test_single(session: aiohttp.ClientSession, http_sem: asyncio.Semaphor
                 return None, line, "http_timeout"
             except Exception as e:
                 return None, line, f"http_unknown_exception:{type(e).__name__}|{str(e)}"
-
             delay_ms = round((time.time() - st) * 1000)
             ff_ok, w, h, codec, br, ff_err = await ffprobe_check(url, ff_sem)
             valid = http_ok and ff_ok
-
             res = {
                 "name": name,
                 "url": url,
@@ -147,7 +143,6 @@ async def test_single(session: aiohttp.ClientSession, http_sem: asyncio.Semaphor
     except Exception as e:
         return None, line, f"task_outer_exception:{type(e).__name__}|{str(e)}"
 
-
 # 【新增】外层包装，兜底捕获取消、逃逸异常
 async def wrap_task(coro, orig_line_text):
     try:
@@ -157,38 +152,31 @@ async def wrap_task(coro, orig_line_text):
     except Exception as e:
         return None, orig_line_text, f"task_uncaught_exception:{type(e).__name__}:{str(e)}"
 
-
 async def main():
     print("[STEP4‑PROGRESS] ======步骤4直播源测速开始【修复计数丢失】======")
     input_path = os.path.join(SOURCES_DIR, "初处理.txt")
     if not os.path.exists(input_path):
         print("[WARN‑STEP4]初处理.txt不存在，退出测速")
         return
-
     with open(input_path, "r", encoding="utf-8") as f:
         lines = [l for l in f if clean_text(l)]
-
     total_input = len(lines)
     print(f"[STEP4‑DEBUG]待测速 {total_input} 条")
     speed_start = time.time()
     time_need_stop = speed_start + MAX_SPEED_TEST_RUN_TIME
-
     http_sem = asyncio.Semaphore(CONCURRENCY_HTTP)
     ff_sem = asyncio.Semaphore(CONCURRENCY_FFPROBE)
     domain_sem = dict()
-
     # 已移除 family=4，不再强制限定IP协议族
     connector = aiohttp.TCPConnector(
         limit=CONCURRENCY_HTTP,
         ttl_dns_cache=300,
         force_close=False
     )
-
     valid_tmp = os.path.join(SOURCES_DIR, ".valid.tmp")
     fail_tmp = os.path.join(SOURCES_DIR, ".fail.tmp")
     results = []
     grace_stop = False
-
     async with aiohttp.ClientSession(connector=connector) as session:
         # 使用wrap_task包装每一个任务，传入原始行
         tasks = [
@@ -211,10 +199,8 @@ async def main():
                     for t in tasks:
                         if not t.done():
                             t.cancel()
-
                 res, orig_line, err = await task
                 completed += 1
-
                 if res is not None:
                     results.append(res)
                     if res["valid"]:
@@ -223,25 +209,36 @@ async def main():
                         ff.write(orig_line + "\n")
                 else:
                     # res为None（格式错误 / 被取消 / 顶层异常）全部归入失败
+                    name_fallback = ""
+                    url_fallback = ""
+                    source_fallback = ""
+                    if "," in orig_line:
+                        name_part, url_part_fb = orig_line.split(",", maxsplit=1)
+                        name_fallback = name_part.strip()
+                        if ' #' in url_part_fb:
+                            url_fallback, source_fallback = url_part_fb.split(' #', maxsplit=1)
+                            url_fallback = url_fallback.strip()
+                            source_fallback = source_fallback.strip()
+                        else:
+                            url_fallback = url_part_fb.strip()
+                            source_fallback = ""
                     results.append({
-                        "name": orig_line.split(",")[0] if "," in orig_line else "",
-                        "url": orig_line.split(",")[1].split("#")[0].strip() if "," in orig_line else "",
+                        "name": name_fallback,
+                        "url": url_fallback,
                         "delay": 0,
                         "width": "",
                         "height": "",
                         "codec": "",
                         "bitrate": "",
                         "valid": False,
-                        "source": orig_line.split("#")[1].strip() if ("#" in orig_line and "," in orig_line) else "",
+                        "source": source_fallback,
                         "err": err
                     })
                     ff.write(orig_line + "\n")
-
                 if completed % 50 == 0:
                     v_cnt = sum(1 for r in results if r["valid"])
                     f_cnt = len(results) - v_cnt
                     print(f"[STEP4‑PROGRESS]已处理 {completed}/{total_input}，已完成有效{v_cnt}，已完成失败{f_cnt} sample_err={err}")
-
         finally:
             fv.close()
             ff.close()
@@ -249,14 +246,12 @@ async def main():
             out_res_tmp = os.path.join(BASE_DIR, ".step4_results.tmp.json")
             with open(out_res_tmp, "w", encoding="utf-8") as f:
                 json.dump(results, f, ensure_ascii=False, indent=2)
-
             valid_final = sum(1 for r in results if r["valid"])
             fail_final = len(results) - valid_final
             diff = total_input - len(results)
             print(f"[STEP4‑STAT]统计：输入总数={total_input}；结果集={len(results)}；有效={valid_final}；失败={fail_final}；差值={diff}")
             if diff > 0:
                 print(f"[STEP4‑WARN] ⚠️存在未捕获任务差值 {diff}")
-
             # === MODULE_FAIL_REASON_STAT BEGIN ===
             # 功能：测速失败原因统计模块
             # 开关：ENABLE_FAIL_REASON_STAT
@@ -279,12 +274,10 @@ async def main():
                     json.dump(dict(err_counter), fp, ensure_ascii=False, indent=2)
                 print(f"[STEP4‑FAIL‑STAT]失败原因统计文件输出：log/fail_reason_stat.json")
             # === MODULE_FAIL_REASON_STAT END ===
-
             if grace_stop:
                 print(f"[STEP4‑END]【超时善终提前结束】；后续步骤可读取临时文件继续处理")
             else:
                 print(f"[STEP4‑END]测速正常全部结束；本轮结果集{len(results)}")
-
 
 if __name__ == "__main__":
     asyncio.run(main())

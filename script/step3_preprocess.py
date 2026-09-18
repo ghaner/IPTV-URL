@@ -4,6 +4,7 @@
 【方案1 函数拆分】
 sanitize_for_save() → 输出保存到初处理.txt，温和清洗，保证链接可访问
 sanitize_for_blacklist() → 仅内存黑名单比对，激进标准化，不写磁盘
+修复：输出行恢复 "url #source" 格式，#前面保留空格，保证下游可以按 ' #' 分割溯源注释
 """
 import os
 import re
@@ -16,7 +17,6 @@ SOURCES_DIR = os.path.join(BASE_DIR, "sources")
 TEMP_BLACKLIST_PATH = os.path.join(SOURCES_DIR, "临时黑名单.txt")
 PERM_BLACKLIST_PATH = os.path.join(SOURCES_DIR, "永久黑名单.txt")
 TEMP_BLACKLIST_EXPIRE_DAY = 30
-
 DEBUG_PRINT = False
 
 ZERO_WIDTH_PAT = re.compile(r'[\u200b\u200c\u200d\u2060\ufeff]')
@@ -43,7 +43,6 @@ def sanitize_for_save(raw_url: str) -> str:
     u = re.sub(r'\s+', '', u.strip())
     if not u:
         return ""
-
     full_protos = ("http://", "https://", "rtsp://", "rtmp://")
     if u.startswith(full_protos):
         pass
@@ -70,7 +69,6 @@ def sanitize_for_blacklist(raw_url: str) -> str:
     u = re.sub(r'\s+', '', u.strip())
     if not u:
         return ""
-
     full_protos = ("http://", "https://", "rtsp://", "rtmp://")
     if u.startswith(full_protos):
         pass
@@ -80,7 +78,6 @@ def sanitize_for_blacklist(raw_url: str) -> str:
         u = "rtmp://" + u[5:]
     else:
         u = "https://" + u
-
     try:
         p = urlparse(u)
         qs_dict = parse_qs(p.query, keep_blank_values=True)
@@ -169,35 +166,28 @@ def main():
     print(f"[DEBUG] BASE_DIR={BASE_DIR}")
     print(f"[DEBUG] SOURCES_DIR={SOURCES_DIR}")
     print(f"[DEBUG] sources目录是否存在: {os.path.exists(SOURCES_DIR)}")
-
     # 自动创建sources目录，解决目录缺失无法写出文件
     if not os.path.exists(SOURCES_DIR):
         os.makedirs(SOURCES_DIR)
         print("[DEBUG] 已自动创建sources文件夹")
-
     merged_file = os.path.join(SOURCES_DIR, "汇总.txt")
     print(f"[DEBUG] 汇总.txt路径={merged_file}，存在={os.path.exists(merged_file)}")
-
     print("[STEP3‑PROGRESS] ======步骤3 汇总直播源初步处理开始======")
     if not os.path.exists(merged_file):
         print("[WARN‑STEP3]汇总.txt不存在，直接退出")
         return
-
     perm_black = load_perm_blacklist()
     temp_black = load_temp_blacklist()
     temp_black, released_url_set = clean_expired_temp_blacklist(temp_black)
     save_temp_blacklist(temp_black)
-
     count_perm_filter = 0
     count_temp_filter = 0
     count_dup = 0
     count_bad = 0
     url_seen_save = set()   # 去重使用【保存版url】（真实访问url）
     output_lines = []
-
     with open(merged_file, "r", encoding="utf-8") as f:
         raw_lines = [clean_text(l) for l in f if clean_text(l)]
-
     print(f"[STEP3‑DEBUG]输入原始行数 {len(raw_lines)}")
 
     for line in raw_lines:
@@ -206,19 +196,20 @@ def main():
             continue
         name, url_part = line.split(",", 1)
         raw_url = url_part.split("#")[0].strip()
-        comment = "#" + url_part.split("#")[1] if "#" in url_part else ""
-
-        # 两个版本
+        # =========修复点：保证注释前带一个空格 " #xxx" =========
+        if "#" in url_part:
+            source_content = url_part.split("#")[1].strip()
+            comment = " #" + source_content
+        else:
+            comment = ""
+        # ======================================================
         save_url = sanitize_for_save(raw_url)          # 输出保存给step4
         black_check_url = sanitize_for_blacklist(raw_url) # 用于黑名单匹配
-
         if not save_url or not name:
             count_bad += 1
             continue
-
         if DEBUG_PRINT:
             print(f"[DEBUG] save_url={repr(save_url)} black_key={repr(black_check_url)} perm_hit={black_check_url in perm_black} temp_hit={black_check_url in temp_black}")
-
         # 使用黑名单专用key做过滤判断
         if black_check_url in perm_black:
             count_perm_filter += 1
@@ -230,16 +221,13 @@ def main():
         if save_url in url_seen_save:
             count_dup += 1
             continue
-
         url_seen_save.add(save_url)
         output_lines.append(f"{clean_text(name)},{save_url}{comment}")
 
     out_file = os.path.join(SOURCES_DIR, "初处理.txt")
     with open(out_file, "w", encoding="utf-8") as f:
         f.write("\n".join(output_lines))
-
     print(f"[STEP3‑FILTER]永久黑名单过滤:{count_perm_filter}；临时黑名单过滤:{count_temp_filter}；重复url:{count_dup}；坏行丢弃:{count_bad}；输出初处理.txt {len(output_lines)}条")
-
     tmp_release = os.path.join(BASE_DIR, ".step3_released.tmp.json")
     with open(tmp_release, "w", encoding="utf-8") as f:
         json.dump(list(released_url_set), f, ensure_ascii=False)
