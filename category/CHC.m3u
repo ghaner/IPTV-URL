@@ -4,23 +4,23 @@ http://107.150.60.122/live/chcdz.m3u8
 #EXTINF:-1 group-title="CHC",CHC动作电影
 http://192.151.150.154/live/chcdz.m3u8
 #EXTINF:-1 group-title="CHC",CHC动作电影
-http://120.198.86.186:9901/tsfile/live/1047_1.m3u8?key=txiptv&playlive=1&authid=0
+http://198.204.228.26/live/chcdz.m3u8
 #EXTINF:-1 group-title="CHC",CHC动作电影
 http://38.75.136.137:98/gslb/dsdqpub/chcdz.m3u8?auth=testpub
 #EXTINF:-1 group-title="CHC",CHC动作电影
-http://198.204.228.26/live/chcdz.m3u8
-#EXTINF:-1 group-title="CHC",CHC家庭影院
-http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8
+http://120.198.86.186:9901/tsfile/live/1047_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="CHC",CHC家庭影院
 http://107.150.60.122/live/chcjt.m3u8
 #EXTINF:-1 group-title="CHC",CHC家庭影院
-http://198.204.228.26/live/chcjt.m3u8
+http://38.75.136.137:98/gslb/dsdqpub/chcjt.m3u8?auth=testpub
+#EXTINF:-1 group-title="CHC",CHC家庭影院
+http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8
 #EXTINF:-1 group-title="CHC",CHC家庭影院
 http://192.151.150.154/live/chcjt.m3u8
 #EXTINF:-1 group-title="CHC",CHC家庭影院
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chcjt
+http://198.204.228.26/live/chcjt.m3u8
 #EXTINF:-1 group-title="CHC",CHC家庭影院
-http://38.75.136.137:98/gslb/dsdqpub/chcjt.m3u8?auth=testpub
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chcjt
 #EXTINF:-1 group-title="CHC",CHC影迷电影
 http://38.75.136.137:98/gslb/dsdqpub/chchd.m3u8?auth=testpub
 #EXTINF:-1 group-title="CHC",CHC电影
