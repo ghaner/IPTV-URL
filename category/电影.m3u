@@ -5,40 +5,44 @@ https://live.ottiptv.cc/yy/1356363815
 https://live.ottiptv.cc/douyu/8884164
 #EXTINF:-1 group-title="电影",3说电影
 https://live.ottiptv.cc/douyu/9643264
-#EXTINF:-1 group-title="电影",77说电影
-https://live.ottiptv.cc/douyu/9444320
 #EXTINF:-1 group-title="电影",8090.电影一哥
 https://live.ottiptv.cc/yy/29197808
 #EXTINF:-1 group-title="电影",CCTV6电影
-http://107.150.60.122/live/cctv6hd.m3u8
-#EXTINF:-1 group-title="电影",CCTV6电影
-http://218.13.170.98:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="电影",CCTV6电影
-http://173.208.212.130:8181/1080p/cctv6.m3u8
-#EXTINF:-1 group-title="电影",CCTV6电影
 http://173.208.212.130:8181/720p/cctv6.m3u8
-#EXTINF:-1 group-title="电影",CCTV6电影
-http://112.30.73.119:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="电影",CCTV6电影
 http://38.75.136.137:98/gslb/dsdqbv/cctv6hd.m3u8?auth=test20251009
 #EXTINF:-1 group-title="电影",CCTV6电影
+http://bztv.tvbus.cc:8081/cdnlive/cctv6.m3u8
+#EXTINF:-1 group-title="电影",CCTV6电影
+http://173.208.212.130:8181/1080p/cctv6.m3u8
+#EXTINF:-1 group-title="电影",CCTV6电影
 http://192.151.150.154/live/cctv6hd.m3u8
+#EXTINF:-1 group-title="电影",CCTV6电影
+https://www.9kds.com/d/1905.php?t=1&id=LIVEOYY31H24H48NE&kl=www.9kds.com
+#EXTINF:-1 group-title="电影",CCTV6电影
+http://218.206.193.218:8888/hls/6/index.m3u8
+#EXTINF:-1 group-title="电影",CCTV6电影
+http://218.13.170.98:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="电影",CCTV6电影
+http://38.75.136.137:98/gslb/dsdqpub/cctv6hd.m3u8?auth=testpub
+#EXTINF:-1 group-title="电影",CCTV6电影
+http://107.150.60.122/live/cctv6hd.m3u8
+#EXTINF:-1 group-title="电影",CCTV6电影
+https://www.9kds.com/d/1905.php?t=1&id=LIVE8J4LTCXPI7QJ5_261&kl=www.9kds.com
 #EXTINF:-1 group-title="电影",CCTV6电影
 http://111.8.242.127:9999/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="电影",CCTV6电影
-http://bztv.tvbus.cc:8081/cdnlive/cctv6.m3u8
-#EXTINF:-1 group-title="电影",CCTV6电影
-http://218.206.193.218:8888/hls/6/index.m3u8
+http://112.30.73.119:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="电影",CHC动作电影
 http://107.150.60.122/live/chcdz.m3u8
 #EXTINF:-1 group-title="电影",CHC动作电影
 http://192.151.150.154/live/chcdz.m3u8
 #EXTINF:-1 group-title="电影",CHC动作电影
-http://120.198.86.186:9901/tsfile/live/1047_1.m3u8?key=txiptv&playlive=1&authid=0
+http://198.204.228.26/live/chcdz.m3u8
 #EXTINF:-1 group-title="电影",CHC动作电影
 http://38.75.136.137:98/gslb/dsdqpub/chcdz.m3u8?auth=testpub
 #EXTINF:-1 group-title="电影",CHC动作电影
-http://198.204.228.26/live/chcdz.m3u8
+http://120.198.86.186:9901/tsfile/live/1047_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="电影",CHC影迷电影
 http://38.75.136.137:98/gslb/dsdqpub/chchd.m3u8?auth=testpub
 #EXTINF:-1 group-title="电影",CHC电影
@@ -55,42 +59,26 @@ https://live.ottiptv.cc/douyu/9457792
 https://live.ottiptv.cc/douyu/9437283
 #EXTINF:-1 group-title="电影",九叔说电影v
 https://live.ottiptv.cc/douyu/9348282
-#EXTINF:-1 group-title="电影",二哈讲电影
-https://live.ottiptv.cc/douyu/8778280
-#EXTINF:-1 group-title="电影",五分钟电影汇
-https://live.ottiptv.cc/douyu/8443438
-#EXTINF:-1 group-title="电影",五福星-电影
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11282233
-#EXTINF:-1 group-title="电影",享看电影
-https://live.ottiptv.cc/douyu/8974130
 #EXTINF:-1 group-title="电影",亮哥讲电影
 https://live.ottiptv.cc/huya/16144175
 #EXTINF:-1 group-title="电影",亮哥讲电影2
-https://live.ottiptv.cc/huya/29982687
-#EXTINF:-1 group-title="电影",亮哥讲电影2
 https://live.ottiptv.cc/huya/21059622
+#EXTINF:-1 group-title="电影",亮哥讲电影2
+https://live.ottiptv.cc/huya/29982687
 #EXTINF:-1 group-title="电影",伦帝电影说
 https://live.ottiptv.cc/douyu/9368091
-#EXTINF:-1 group-title="电影",伯乐说电影V
-https://live.ottiptv.cc/douyu/9386057
-#EXTINF:-1 group-title="电影",俗哥看电影
-https://live.ottiptv.cc/douyu/2161818
 #EXTINF:-1 group-title="电影",冒险电影放映厅
 https://live.ottiptv.cc/huya/21059566
 #EXTINF:-1 group-title="电影",凤凰电影
-http://221.7.175.154:85/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="电影",凤凰电影
 http://221.7.175.154:8445/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="电影",刘哔电影
-https://live.ottiptv.cc/douyu/2632223
+#EXTINF:-1 group-title="电影",凤凰电影
+http://221.7.175.154:85/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="电影",刘德华-电影
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11342424
 #EXTINF:-1 group-title="电影",刘德华电影
 https://live.metshop.top/huya/11342424
 #EXTINF:-1 group-title="电影",刘老师说电影
 https://live.ottiptv.cc/douyu/8317926
-#EXTINF:-1 group-title="电影",前任电影
-https://live.ottiptv.cc/douyu/9329242
 #EXTINF:-1 group-title="电影",功夫电影
 https://live.metshop.top/huya/11352941
 #EXTINF:-1 group-title="电影",动作电影
@@ -99,8 +87,6 @@ http://dassby.qqff.top:99/live/CHC动作电影/index.m3u8
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11601958
 #EXTINF:-1 group-title="电影",动画电影放映厅
 https://live.ottiptv.cc/huya/11352878
-#EXTINF:-1 group-title="电影",博然讲电影
-https://live.ottiptv.cc/douyu/9561992
 #EXTINF:-1 group-title="电影",发条张的电影最TOP
 https://live.ottiptv.cc/douyu/2164691
 #EXTINF:-1 group-title="电影",古天乐电影
@@ -117,6 +103,8 @@ https://live.ottiptv.cc/huya/29982684
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11336587
 #EXTINF:-1 group-title="电影",周星驰电影
 https://live.metshop.top/huya/11342412
+#EXTINF:-1 group-title="电影",周海媚-电影
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11279247
 #EXTINF:-1 group-title="电影",唐司令说电影
 https://live.ottiptv.cc/douyu/8774345
 #EXTINF:-1 group-title="电影",喜人电影
@@ -135,54 +123,22 @@ https://live.ottiptv.cc/yy/1354931503
 https://live.ottiptv.cc/yy/1354936201
 #EXTINF:-1 group-title="电影",大墨电影
 https://live.ottiptv.cc/huya/29458834
-#EXTINF:-1 group-title="电影",大壮撞电影
-https://live.ottiptv.cc/douyu/9437349
-#EXTINF:-1 group-title="电影",大荒电影
-https://live.ottiptv.cc/douyu/3508538
 #EXTINF:-1 group-title="电影",大进军全集：红色系列电影
 https://live.ottiptv.cc/yy/1382745083
-#EXTINF:-1 group-title="电影",天堂电影1895
-https://live.ottiptv.cc/douyu/9573592
 #EXTINF:-1 group-title="电影",奇幻电影放映厅
 https://live.ottiptv.cc/huya/26355847
 #EXTINF:-1 group-title="电影",奇怪电影
 https://live.ottiptv.cc/douyu/9440966
-#EXTINF:-1 group-title="电影",女汉子说电影
-https://live.ottiptv.cc/douyu/9395966
-#EXTINF:-1 group-title="电影",女神撩电影
-https://live.ottiptv.cc/douyu/9439594
 #EXTINF:-1 group-title="电影",宇哥讲电影
 https://live.ottiptv.cc/douyu/2104744
-#EXTINF:-1 group-title="电影",安小闫说电影x
-https://live.ottiptv.cc/douyu/1842621
 #EXTINF:-1 group-title="电影",小丑讲电影
 https://live.ottiptv.cc/huya/16857432
-#EXTINF:-1 group-title="电影",小丽说电影
-https://live.ottiptv.cc/douyu/9368016
-#EXTINF:-1 group-title="电影",小乔讲电影
-https://live.ottiptv.cc/douyu/8413908
-#EXTINF:-1 group-title="电影",小儛电影嘚啵嘚
-https://live.ottiptv.cc/douyu/8362978
-#EXTINF:-1 group-title="电影",小岛讲电影
-https://live.ottiptv.cc/douyu/9390955
 #EXTINF:-1 group-title="电影",小川侃电影
 https://live.ottiptv.cc/huya/15870999
-#EXTINF:-1 group-title="电影",小浅说电影
-https://live.ottiptv.cc/douyu/9665834
 #EXTINF:-1 group-title="电影",小涛讲电影V
 https://live.ottiptv.cc/douyu/8415464
-#EXTINF:-1 group-title="电影",小超讲电影
-https://live.ottiptv.cc/douyu/3432645
-#EXTINF:-1 group-title="电影",小马哥说电影
-https://live.ottiptv.cc/douyu/9396672
-#EXTINF:-1 group-title="电影",少年看电影
-https://live.ottiptv.cc/douyu/8762120
 #EXTINF:-1 group-title="电影",岳云鹏宋小宝也来演电影了？
 https://live.ottiptv.cc/yy/1354926612
-#EXTINF:-1 group-title="电影",崽崽撩电影
-https://live.ottiptv.cc/douyu/8325511
-#EXTINF:-1 group-title="电影",幕撩电影
-https://live.ottiptv.cc/douyu/9486015
 #EXTINF:-1 group-title="电影",强森-电影
 http://tv.zimtv.cn/tv/player/api/huya.php?id=21059581
 #EXTINF:-1 group-title="电影",强森电影
@@ -203,8 +159,6 @@ https://live.ottiptv.cc/huya/29982641
 https://live.ottiptv.cc/huya/26355795
 #EXTINF:-1 group-title="电影",成龙电影
 https://live.metshop.top/huya/11342386
-#EXTINF:-1 group-title="电影",我是吃泡面看电影
-https://live.ottiptv.cc/douyu/8851063
 #EXTINF:-1 group-title="电影",战争电影
 https://live.metshop.top/huya/21059574
 #EXTINF:-1 group-title="电影",战争电影放映厅
@@ -215,38 +169,24 @@ https://live.ottiptv.cc/huya/16028551
 https://live.ottiptv.cc/huya/21059623
 #EXTINF:-1 group-title="电影",指缝里看电影
 https://live.ottiptv.cc/douyu/9647834
-#EXTINF:-1 group-title="电影",撩电影8
-https://live.ottiptv.cc/douyu/9351043
 #EXTINF:-1 group-title="电影",斯坦森-电影
 http://tv.zimtv.cn/tv/player/api/huya.php?id=21059588
-#EXTINF:-1 group-title="电影",无际电影
-https://live.ottiptv.cc/douyu/9720498
 #EXTINF:-1 group-title="电影",星君说电影
 https://live.ottiptv.cc/douyu/8014467
-#EXTINF:-1 group-title="电影",晓晓说电影
-https://live.ottiptv.cc/douyu/9430717
-#EXTINF:-1 group-title="电影",晓麦讲电影
-https://live.ottiptv.cc/douyu/453963
+#EXTINF:-1 group-title="电影",曾江-电影
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11601981
 #EXTINF:-1 group-title="电影",有部电影儿
 https://live.ottiptv.cc/douyu/9736479
 #EXTINF:-1 group-title="电影",末日系列-外国电影合集
 https://live.ottiptv.cc/yy/1354889019
-#EXTINF:-1 group-title="电影",末日说电影
-https://live.ottiptv.cc/douyu/9431125
 #EXTINF:-1 group-title="电影",李连杰电影
 https://live.metshop.top/huya/11342390
-#EXTINF:-1 group-title="电影",松轩说电影
-https://live.ottiptv.cc/douyu/1524969
 #EXTINF:-1 group-title="电影",林正英-经典电影
 https://live.ottiptv.cc/yy/34229877
 #EXTINF:-1 group-title="电影",林正英电影
 https://live.metshop.top/huya/11342421
 #EXTINF:-1 group-title="电影",枪战电影
 https://live.metshop.top/huya/21059579
-#EXTINF:-1 group-title="电影",梓帆说电影
-https://live.ottiptv.cc/douyu/9769563
-#EXTINF:-1 group-title="电影",楚哥说电影
-https://live.ottiptv.cc/douyu/9375743
 #EXTINF:-1 group-title="电影",楚门聊电影
 https://live.ottiptv.cc/huya/16507906
 #EXTINF:-1 group-title="电影",止戈电影
@@ -257,8 +197,6 @@ https://live.metshop.top/huya/11342427
 https://live.ottiptv.cc/huya/29982611
 #EXTINF:-1 group-title="电影",每日好电影V
 https://live.ottiptv.cc/douyu/9533302
-#EXTINF:-1 group-title="电影",汪哥说电影
-https://live.ottiptv.cc/douyu/9312685
 #EXTINF:-1 group-title="电影",沈腾-电影
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11601968
 #EXTINF:-1 group-title="电影",沈腾电影
@@ -267,10 +205,6 @@ https://live.metshop.top/huya/11601968
 https://live.ottiptv.cc/douyu/9414884
 #EXTINF:-1 group-title="电影",浅浅爱电影
 https://live.ottiptv.cc/huya/31274232
-#EXTINF:-1 group-title="电影",浩贤说电影
-https://live.ottiptv.cc/douyu/10535867
-#EXTINF:-1 group-title="电影",涛浪浪电影
-https://live.ottiptv.cc/douyu/5424258
 #EXTINF:-1 group-title="电影",涵哥评电影
 https://live.ottiptv.cc/huya/16865726
 #EXTINF:-1 group-title="电影",湖南电影
@@ -283,8 +217,6 @@ https://live.ottiptv.cc/douyu/2039501
 https://live.ottiptv.cc/douyu/9559158
 #EXTINF:-1 group-title="电影",熊妹撩电影
 https://live.ottiptv.cc/huya/15966357
-#EXTINF:-1 group-title="电影",熊猫电影
-https://live.ottiptv.cc/douyu/3506483
 #EXTINF:-1 group-title="电影",爆笑电影！王牌大贱谍2-3
 https://live.ottiptv.cc/yy/1382735556
 #EXTINF:-1 group-title="电影",爆裂电影2
@@ -299,14 +231,8 @@ https://live.ottiptv.cc/douyu/10010651
 https://live.ottiptv.cc/douyu/3637778
 #EXTINF:-1 group-title="电影",狄仁杰电影
 https://live.metshop.top/huya/30080229
-#EXTINF:-1 group-title="电影",狗毛电影
-https://live.ottiptv.cc/douyu/9356637
 #EXTINF:-1 group-title="电影",独立鱼电影
 https://live.ottiptv.cc/douyu/2413555
-#EXTINF:-1 group-title="电影",猫叔说电影
-https://live.ottiptv.cc/douyu/9820039
-#EXTINF:-1 group-title="电影",猫眼电影
-https://live.ottiptv.cc/douyu/8726221
 #EXTINF:-1 group-title="电影",玄幻电影
 https://live.metshop.top/huya/11342414
 #EXTINF:-1 group-title="电影",王坑坑聊电影
@@ -315,16 +241,12 @@ https://live.ottiptv.cc/douyu/9402110
 https://live.metshop.top/huya/11602058
 #EXTINF:-1 group-title="电影",珍珠港-电影
 https://live.ottiptv.cc/yy/1354936234
-#EXTINF:-1 group-title="电影",珞珞说电影
-https://live.ottiptv.cc/douyu/3718888
 #EXTINF:-1 group-title="电影",甄子丹-电影
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11352935
 #EXTINF:-1 group-title="电影",甄子丹电影
 https://live.metshop.top/huya/11352935
 #EXTINF:-1 group-title="电影",电影
 https://live.ottiptv.cc/yy/37454459
-#EXTINF:-1 group-title="电影",电影_不挤影院
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11352897
 #EXTINF:-1 group-title="电影",电影_丧尸片
 http://tv.zimtv.cn/tv/player/api/huya.php?id=21059578
 #EXTINF:-1 group-title="电影",电影_战争
@@ -333,34 +255,24 @@ http://tv.zimtv.cn/tv/player/api/huya.php?id=21059592
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11352974
 #EXTINF:-1 group-title="电影",电影_谍战片
 http://tv.zimtv.cn/tv/player/api/huya.php?id=21059587
-#EXTINF:-1 group-title="电影",电影七十二变
-https://live.ottiptv.cc/douyu/9323164
 #EXTINF:-1 group-title="电影",电影丧尸片
 http://live.metshop.top/huya/21059578?cdn=alicdn
 #EXTINF:-1 group-title="电影",电影先锋V
 https://live.ottiptv.cc/douyu/8711212
 #EXTINF:-1 group-title="电影",电影八点档
 http://live.metshop.top/huya/880261?cdn=alicdn
-#EXTINF:-1 group-title="电影",电影冷知识
-https://live.ottiptv.cc/douyu/9660835
 #EXTINF:-1 group-title="电影",电影刘德华
 http://live.metshop.top/huya/11342424?cdn=alicdn
-#EXTINF:-1 group-title="电影",电影刘油果
-https://live.ottiptv.cc/douyu/3985805
 #EXTINF:-1 group-title="电影",电影功夫片
 http://live.metshop.top/huya/11352941?cdn=alicdn
 #EXTINF:-1 group-title="电影",电影动作电影
 http://live.metshop.top/huya/11602077?cdn=alicdn
-#EXTINF:-1 group-title="电影",电影吐槽汇
-https://live.ottiptv.cc/douyu/9447668
 #EXTINF:-1 group-title="电影",电影周星星
 http://live.metshop.top/huya/11336587?cdn=alicdn
 #EXTINF:-1 group-title="电影",电影喜剧专场
 http://live.metshop.top/huya/11602044?cdn=alicdn
 #EXTINF:-1 group-title="电影",电影嫣然影厅
 http://live.metshop.top/huya/11601977?cdn=alicdn
-#EXTINF:-1 group-title="电影",电影小班长
-https://live.ottiptv.cc/douyu/549693
 #EXTINF:-1 group-title="电影",电影幕后喵
 https://live.ottiptv.cc/douyu/8884074
 #EXTINF:-1 group-title="电影",电影战争片
@@ -405,18 +317,12 @@ https://live.ottiptv.cc/douyu/8706652
 https://live.ottiptv.cc/yy/1382736816
 #EXTINF:-1 group-title="电影",疯狂电影人2带你解锁无厘头拍戏
 https://live.ottiptv.cc/yy/1354932426
-#EXTINF:-1 group-title="电影",看电影了没V
-https://live.ottiptv.cc/douyu/9562616
 #EXTINF:-1 group-title="电影",短剧电影院
 https://live.ottiptv.cc/huya/31002899
 #EXTINF:-1 group-title="电影",碟中谍系列电影
 https://live.ottiptv.cc/yy/1382736836
-#EXTINF:-1 group-title="电影",神羊说电影
-https://live.ottiptv.cc/douyu/9443552
 #EXTINF:-1 group-title="电影",科幻电影
 https://live.ottiptv.cc/yy/1354930209
-#EXTINF:-1 group-title="电影",童乐说电影
-https://live.ottiptv.cc/douyu/9660704
 #EXTINF:-1 group-title="电影",粤语电影丶
 https://live.ottiptv.cc/douyu/1226741
 #EXTINF:-1 group-title="电影",粤语电影放映厅
@@ -433,28 +339,14 @@ https://txmov2.a.kwimgs.com/bs3/video-hls/5211790793651941963_hlsb.m3u8
 https://live.ottiptv.cc/douyu/8706393
 #EXTINF:-1 group-title="电影",罪犯电影
 https://live.metshop.top/huya/11352962
-#EXTINF:-1 group-title="电影",老王的夜电影院
-https://live.ottiptv.cc/douyu/3498219
-#EXTINF:-1 group-title="电影",老电影故事
-https://live.ottiptv.cc/douyu/9167273
-#EXTINF:-1 group-title="电影",老邪说电影
-https://live.ottiptv.cc/douyu/9222870
-#EXTINF:-1 group-title="电影",胶片看电影
-https://live.ottiptv.cc/douyu/3715426
 #EXTINF:-1 group-title="电影",腹黑电影
 https://live.ottiptv.cc/douyu/8867878
 #EXTINF:-1 group-title="电影",苏州电影娱乐
 https://live-auth.51kandianshi.com/szgd/csztv4.m3u8
-#EXTINF:-1 group-title="电影",莱纳电影
-https://live.ottiptv.cc/douyu/9356937
-#EXTINF:-1 group-title="电影",菠萝说电影
-https://live.ottiptv.cc/douyu/3714736
 #EXTINF:-1 group-title="电影",蒲公英电影
 https://live.ottiptv.cc/huya/28806637
 #EXTINF:-1 group-title="电影",虫哥说电影
 https://live.ottiptv.cc/douyu/8915074
-#EXTINF:-1 group-title="电影",西施撩电影
-https://live.ottiptv.cc/douyu/7532080
 #EXTINF:-1 group-title="电影",许冠英-电影
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11601972
 #EXTINF:-1 group-title="电影",说说电影故事
@@ -463,8 +355,6 @@ https://live.ottiptv.cc/douyu/9444627
 https://live.ottiptv.cc/douyu/8705754
 #EXTINF:-1 group-title="电影",谍战电影
 https://live.metshop.top/huya/21059585
-#EXTINF:-1 group-title="电影",贰哥电影
-https://live.ottiptv.cc/douyu/9338867
 #EXTINF:-1 group-title="电影",贺岁电影
 https://live.metshop.top/huya/11601986
 #EXTINF:-1 group-title="电影",超精彩！系列动作电影
@@ -475,16 +365,8 @@ https://live.ottiptv.cc/huya/15894162
 https://live.ottiptv.cc/huya/29982680
 #EXTINF:-1 group-title="电影",辰哥说电影
 https://live.ottiptv.cc/douyu/9371407
-#EXTINF:-1 group-title="电影",逐梦电影
-https://live.ottiptv.cc/douyu/4058285
-#EXTINF:-1 group-title="电影",逗米说电影
-https://live.ottiptv.cc/douyu/421222
 #EXTINF:-1 group-title="电影",酱婶儿电影
 https://live.ottiptv.cc/huya/24396474
-#EXTINF:-1 group-title="电影",钱小元说电影
-https://live.ottiptv.cc/douyu/9368265
-#EXTINF:-1 group-title="电影",阿苏电影
-https://live.ottiptv.cc/douyu/9037784
 #EXTINF:-1 group-title="电影",青年电影馆
 https://live.ottiptv.cc/huya/21388479
 #EXTINF:-1 group-title="电影",韩国电影1
@@ -495,12 +377,6 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=743
 https://live.ottiptv.cc/yy/1355171231
 #EXTINF:-1 group-title="电影",鱼丸说电影
 https://live.ottiptv.cc/huya/16615910
-#EXTINF:-1 group-title="电影",鲨说电影
-https://live.ottiptv.cc/douyu/9544628
-#EXTINF:-1 group-title="电影",鸡哥聊电影
-https://live.ottiptv.cc/douyu/5067952
-#EXTINF:-1 group-title="电影",鹏友说电影
-https://live.ottiptv.cc/douyu/9445244
 #EXTINF:-1 group-title="电影",黄渤电影
 https://live.metshop.top/huya/11352876
 #EXTINF:-1 group-title="电影",龙祥电影

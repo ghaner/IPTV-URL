@@ -1,3 +1,3 @@
 https://cdn10.163189.xyz/stream/163189/xinghe/
-http://home.yulei.online:9999/rtp/226.0.2.169:9264
-https://mytv.cdn.loc.cc/o12.php?id=fct
+http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
+https://lunbo.freetv.top/yy/1382851593
