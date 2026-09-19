@@ -2,6 +2,7 @@
 """Step5：测速临时文件原子重命名、更新黑名单、生成源质量报告"""
 import json
 import os
+import re
 from collections import defaultdict
 from datetime import datetime
 
@@ -150,20 +151,40 @@ def main():
     else:
         print("[BLACKLIST‑INFO]手动触发，不更新黑名单")
 
-    # =========【修复开始：借鉴iptv_process成熟统计逻辑，修复TOP3为空bug】 =========
+    # =========【修复开始：方案1，读取sources/下载源.txt构建url->一级下载源映射，修复TOP3输出次级链接bug】 =========
+    download_source_txt = os.path.join(SOURCES_DIR, "下载源.txt")
+    # 构建 url -> 归属一级下载源集合，支持一个url对应多个下载源
+    url_to_root_sources = defaultdict(set)
+    pat = re.compile(r'^[^,]+,([^ ]+) *#(.+)$')
+
+    if os.path.exists(download_source_txt):
+        with open(download_source_txt, "r", encoding="utf-8") as f:
+            for line_raw in f:
+                line = line_raw.strip()
+                if not line:
+                    continue
+                m = pat.match(line)
+                if not m:
+                    continue
+                play_url = m.group(1).strip()
+                root_src = m.group(2).strip()
+                url_to_root_sources[play_url].add(root_src)
+
+    # 统计容器 key：一级下载源地址（来自DOWNLOAD_SOURCE_URLS.json）
     total_stat = defaultdict(int)
     valid_stat = defaultdict(int)
-    # 第一步：遍历测速结果，统计每个source的总数、有效数
-    for r in results:
-        src = r["source"]
-        src = clean_text(src)
-        if not src:
-            continue
-        total_stat[src] += 1
-        if r["valid"]:
-            valid_stat[src] += 1
 
-    # 收集全部出现过的源：合并source_map的key + 测速结果统计出来的source key，防止tmp文件丢失导致源缺失
+    for r in results:
+        test_url = r["url"]
+        is_valid = r["valid"]
+        # 查表获取该url归属的一级下载源集合；查不到归unknown
+        root_src_set = url_to_root_sources.get(test_url, {"unknown"})
+        for root_src in root_src_set:
+            total_stat[root_src] += 1
+            if is_valid:
+                valid_stat[root_src] += 1
+
+    # 合并source_map的key，保证有些源测速样本为0也出现在报告中
     all_source_keys = set(source_map.keys())
     all_source_keys.update(total_stat.keys())
 
@@ -172,18 +193,23 @@ def main():
         t = total_stat.get(src_url, 0)
         v = valid_stat.get(src_url, 0)
         f = t - v
-        frate = f / t if t > 0 else 0
+        if t > 0:
+            frate = f / t
+            avail_rate = 1 - frate
+        else:
+            frate = 0.0
+            avail_rate = 0.0
         report.append({
             "source_url": src_url,
             "total": t,
             "valid": v,
             "failed": f,
             "failure_rate": round(frate, 4),
-            "available_rate": round(1 - frate, 4)
+            "available_rate": round(avail_rate, 4)
         })
 
-    # 只把有测速样本(total>0)的条目参与排序；没有样本的源排除，避免0失效率占位
-    valid_report_items = [x for x in report if x["total"] > 0]
+    # 只把有测速样本(total>0)的条目参与排序；过滤unknown不参与TOP3
+    valid_report_items = [x for x in report if x["total"] > 0 and x["source_url"] != "unknown"]
     bad_top3 = sorted(valid_report_items, key=lambda x: x["failure_rate"], reverse=True)[:3]
     bad_url_list = [x["source_url"] for x in bad_top3]
     # =========【修复结束】 =========
