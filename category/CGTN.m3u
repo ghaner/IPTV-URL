@@ -2,11 +2,11 @@
 #EXTINF:-1 group-title="CGTN",CGTN
 https://0472.org/hls/cgtn.m3u8
 #EXTINF:-1 group-title="CGTN",CGTN
+https://english-livebkali.cgtn.com/live/encgtn.m3u8
+#EXTINF:-1 group-title="CGTN",CGTN
 https://hlspackager.akamaized.net/live/DB/CGTN_ENGLISH/HLS/CGTN_ENGLISH.m3u8
 #EXTINF:-1 group-title="CGTN",CGTN
 https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
-#EXTINF:-1 group-title="CGTN",CGTN
-https://english-livebkali.cgtn.com/live/encgtn.m3u8
 #EXTINF:-1 group-title="CGTN",CGTN
 https://dai.google.com/linear/hls/event/r4sa-f6GSN2XIvzKv5jVng/master.m3u8
 #EXTINF:-1 group-title="CGTN",CGTN Documentary
