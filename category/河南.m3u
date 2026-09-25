@@ -2,30 +2,34 @@
 #EXTINF:-1 group-title="河南",河南卫视
 http://38.75.136.137:98/gslb/dsdqpub/hawshd.m3u8?auth=testpub
 #EXTINF:-1 group-title="河南",河南卫视
-http://120.198.95.220:9901/tsfile/live/1055_1.m3u8?key=txiptv&playlive=1&down=1
-#EXTINF:-1 group-title="河南",河南卫视
-http://61.136.172.236:9901/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="河南",河南卫视
-http://smzb.bypbwxx.top/lvdou/zhibojm-weishi-ws.php?token=6ab561c477a9f3de17c725b3067ae3
-#EXTINF:-1 group-title="河南",河南卫视
-http://113.25.252.226:9901/tsfile/live/1032_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="河南",河南卫视
-http://bztv.tvbus.cc:8081/cdnlive/haws.m3u8
+http://61.178.227.57:9901/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="河南",河南卫视
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hawshd
 #EXTINF:-1 group-title="河南",河南卫视
-http://218.206.193.218:8888/hls/18/index.m3u8
-#EXTINF:-1 group-title="河南",河南卫视
-http://173.208.212.130:8181/720p/haws.m3u8
+http://113.25.252.226:9901/tsfile/live/1032_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="河南",河南卫视
 http://192.151.150.154/live/hawshd.m3u8
-#EXTINF:-1 group-title="河南",河南卫视
-http://by4.nty.tv189.cn/live/tm-dxhenanws-4000k.m3u8
-#EXTINF:-1 group-title="河南",河南卫视
-http://198.204.228.26/live/hawshd.m3u8
 #EXTINF:-1 group-title="河南",河南卫视
 http://107.150.60.122/live/hawshd.m3u8
 #EXTINF:-1 group-title="河南",河南卫视
 http://61.136.172.236:9901/tsfile/live/0139_1.m3u8
 #EXTINF:-1 group-title="河南",河南卫视
+http://61.136.172.236:9901/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="河南",河南卫视
+http://198.204.228.26/live/hawshd.m3u8
+#EXTINF:-1 group-title="河南",河南卫视
+http://218.206.193.218:8888/hls/18/index.m3u8
+#EXTINF:-1 group-title="河南",河南卫视
+http://bztv.tvbus.cc:8081/cdnlive/haws.m3u8
+#EXTINF:-1 group-title="河南",河南卫视
+http://112.30.73.119:9901/tsfile/live/1404_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 group-title="河南",河南卫视
+http://173.208.212.130:8181/720p/haws.m3u8
+#EXTINF:-1 group-title="河南",河南卫视
 http://111.59.139.82:11888/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="河南",河南卫视
+http://120.198.95.220:9901/tsfile/live/1055_1.m3u8?key=txiptv&playlive=1&down=1
+#EXTINF:-1 group-title="河南",河南卫视
+http://112.30.73.119:9901/tsfile/live/1043_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 group-title="河南",河南卫视
+http://by4.nty.tv189.cn/live/tm-dxhenanws-4000k.m3u8

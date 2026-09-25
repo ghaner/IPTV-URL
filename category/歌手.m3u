@@ -1,8 +1,6 @@
 #EXTM3U
 #EXTINF:-1 group-title="歌手",光良-童话
 http://vodcdn.video.taobao.com/oss/ali-video/e2c54a5b89aaa794cfc186c41d2ef348/video.m3u8
-#EXTINF:-1 group-title="歌手",刘德华-电影
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11342424
 #EXTINF:-1 group-title="歌手",刘德华电影
 https://live.metshop.top/huya/11342424
 #EXTINF:-1 group-title="歌手",叶倩文-伤逝

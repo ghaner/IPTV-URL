@@ -1,12 +1,8 @@
 CCTV-2财经,http://113.25.252.226:9901/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
-CCTV2财经,http://111.8.242.127:9999/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
-CCTV2财经,http://38.75.136.137:98/gslb/dsdqbv/cctv2hd.m3u8?auth=test20251009
-CCTV2财经,http://218.206.193.218:8888/hls/2/index.m3u8
-CCTV2财经,http://bztv.tvbus.cc:8081/cdnlive/cctv2.m3u8
-CCTV2财经,http://pull-hs-f5.flive.douyincdn.com/media/stream-120105451703763628/index.m3u8?expire=1790323138&sign=a7664c511f424fba5cd9e6340cb32e42&volcSecret=a7664c511f424fba5cd9e6340cb32e42&volcTime=1790323138&arch_hrchy=w1&exp_hrchy=w1&major_anchor_level=common&t_id=037-202609181558570E977CF76D82ED320390-mQS5Ng
-CCTV2财经,http://173.208.212.130:8181/1080p/cctv2.m3u8
-CCTV2财经,http://173.208.212.130:8181/720p/cctv2.m3u8
+CCTV2财经,http://61.178.227.57:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV2财经,http://112.30.73.119:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=0&authid=0
+CCTV2财经,http://218.206.193.218:8888/hls/2/index.m3u8
+CCTV2财经,http://pull-hls-f11.douyincdn.com/media/stream-120105451703763628.m3u8?expire=1790844790&sign=dd1efce5995b3f95e87042b53327ff97&arch_hrchy=w1&exp_hrchy=w1&major_anchor_level=common&t_id=037-20260924165310D782B751D3F146884B3A-81pCoE
 东方财经,http://8.138.7.223/tv/5gtv.php?id=227
 深圳财经生活,http://116.77.33.98:44330/tsfile/live/1003_1.m3u8?key=txiptv&playlive=0&authid=0
 点掌财经,https://volcanopull.aniu.tv/live/aniu2/index.m3u8
