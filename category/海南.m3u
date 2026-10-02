@@ -1,13 +1,27 @@
 #EXTM3U
+#EXTINF:-1 group-title="海南",海南公共
+http://nn.7x9d.cn/地方台8563/海南.php?id=ggpd
 #EXTINF:-1 group-title="海南",海南卫视
-http://www.negative.top:50000/rtp/233.50.200.165:5140
+http://cssbyd.imwork.net:8082/hls/31/index.m3u8
 #EXTINF:-1 group-title="海南",海南卫视
 http://nn.7x9d.cn/地方台8563/海南.php?id=hnws
 #EXTINF:-1 group-title="海南",海南卫视
+http://182.46.8.235:7788/947472502
+#EXTINF:-1 group-title="海南",海南卫视
 http://183.11.239.36:808/hls/124/index.m3u8
+#EXTINF:-1 group-title="海南",海南卫视
+https://livelyws1.chinamcache.com/lyws/newlive_zb03.m3u8?auth_key=1767148001-0-0-0650c6542c331540df214a79a09a2356
+#EXTINF:-1 group-title="海南",海南少儿
+http://nn.7x9d.cn/地方台8563/海南.php?id=sepd
 #EXTINF:-1 group-title="海南",海南文旅
 http://153.0.171.163:85/tsfile/live/1019_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="海南",海南文旅
+http://nn.7x9d.cn/地方台8563/海南.php?id=wlpd
+#EXTINF:-1 group-title="海南",海南新闻
+http://nn.7x9d.cn/地方台8563/海南.php?id=xwpd
 #EXTINF:-1 group-title="海南",海南新闻
 http://153.0.171.163:85/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="海南",海南自贸
 http://153.0.171.163:85/tsfile/live/1016_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="海南",海南自贸
+http://nn.7x9d.cn/地方台8563/海南.php?id=jjpd

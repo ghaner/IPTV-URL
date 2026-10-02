@@ -1,14 +1,12 @@
 #EXTM3U
-#EXTINF:-1 group-title="财经",CCTV-2财经
-http://113.25.252.226:9901/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="财经",CCTV2财经
-http://61.178.227.57:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
+http://pull-hls-f11.douyincdn.com/media/stream-120105451703763628.m3u8?expire=1791363115&sign=150899791ebecc56fc828bb4e0ab6423&exp_hrchy=w1&major_anchor_level=common&arch_hrchy=w1&t_id=037-20260930165154203939F03E9479B7442F-Yv0zVT
 #EXTINF:-1 group-title="财经",CCTV2财经
-http://112.30.73.119:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=0&authid=0
+http://192.151.150.154/live/cctv2hd.m3u8
 #EXTINF:-1 group-title="财经",CCTV2财经
 http://218.206.193.218:8888/hls/2/index.m3u8
 #EXTINF:-1 group-title="财经",CCTV2财经
-http://pull-hls-f11.douyincdn.com/media/stream-120105451703763628.m3u8?expire=1790844790&sign=dd1efce5995b3f95e87042b53327ff97&arch_hrchy=w1&exp_hrchy=w1&major_anchor_level=common&t_id=037-20260924165310D782B751D3F146884B3A-81pCoE
+http://38.75.136.137:98/gslb/dsdqbv/cctv2hd.m3u8?auth=test20251009
 #EXTINF:-1 group-title="财经",东方财经
 http://8.138.7.223/tv/5gtv.php?id=227
 #EXTINF:-1 group-title="财经",深圳财经生活

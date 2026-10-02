@@ -1,8 +1,6 @@
 #EXTM3U
 #EXTINF:-1 group-title="演员",刘德华电影
 https://live.metshop.top/huya/11342424
-#EXTINF:-1 group-title="演员",古天乐-电影
-http://tv.zimtv.cn/tv/player/api/huya.php?id=11602041
 #EXTINF:-1 group-title="演员",古天乐电影
 https://live.metshop.top/huya/29982675
 #EXTINF:-1 group-title="演员",叶问1-4-甄子丹
@@ -11,8 +9,12 @@ https://live.ottiptv.cc/yy/1382745176
 http://222.186.39.38:8000/028749/index.m3u8
 #EXTINF:-1 group-title="演员",周星驰--喜剧之王
 https://live.ottiptv.cc/huya/30631741
+#EXTINF:-1 group-title="演员",周星驰喜剧武侠恐怖好看
+https://live.ottiptv.cc/yy/29945997
 #EXTINF:-1 group-title="演员",周星驰电影
 https://live.metshop.top/huya/11342412
+#EXTINF:-1 group-title="演员",周润发-电影
+http://tv.zimtv.cn/tv/player/api/huya.php?id=11342387
 #EXTINF:-1 group-title="演员",周润发-赌神
 https://live.ottiptv.cc/huya/30631745
 #EXTINF:-1 group-title="演员",张国荣与周润发的兄弟情
@@ -39,7 +41,9 @@ http://tv.zimtv.cn/tv/player/api/huya.php?id=11601968
 https://live.metshop.top/huya/11601968
 #EXTINF:-1 group-title="演员",玉女林青霞
 https://live.ottiptv.cc/huya/30631751
-#EXTINF:-1 group-title="演员",甄子丹-电影
+#EXTINF:-1 group-title="演员",王俊凯的资源组
+https://live.ottiptv.cc/douyu/8862216
+#EXTINF:-1 group-title="演员",甄子丹
 http://tv.zimtv.cn/tv/player/api/huya.php?id=11352935
 #EXTINF:-1 group-title="演员",甄子丹电影
 https://live.metshop.top/huya/11352935
@@ -49,6 +53,8 @@ http://live.metshop.top/huya/11342424?cdn=alicdn
 http://live.metshop.top/huya/11342429?cdn=alicdn
 #EXTINF:-1 group-title="演员",精武英雄-李连杰主演经典动作片
 https://live.ottiptv.cc/yy/1382736873
+#EXTINF:-1 group-title="演员",胡椒粉的胡歌
+https://live.ottiptv.cc/douyu/5448413
 #EXTINF:-1 group-title="演员",贾玲春晚小品
 https://live.ottiptv.cc/yy/1382736720
 #EXTINF:-1 group-title="演员",贾玲经典小品
